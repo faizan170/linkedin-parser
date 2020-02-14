@@ -1,0 +1,26 @@
+{
+    "name": "Sai teja Kandra",
+    "loc": "Hyderabad, Telangana, India",
+    "profileTitle": "Actively looking for Machine learning and data science job",
+    "connections": "500+ connections",
+    "about": " it has been great so far, working as software developer.now I'm about to transition into machine learning/datascientist\n\n\n\n\n\n... see more",
+    "experience": [
+        {
+            "role": "Software Developer",
+            "company": "TRINITI ADVANCED SOFTWARE LABS PRIVATE LIMITED",
+            "dateRange": "Jul 2018 \u2013 Present",
+            "duration": "1 yr 8 mos",
+            "location": "Hyderabad Area, India"
+        }
+    ],
+    "education": [
+        {
+            "institute": "sri indu college of enggineering and technology",
+            "studyArea": "computer science enggineering",
+            "duration": {
+                "start": "2013",
+                "end": "2017"
+            }
+        }
+    ]
+}

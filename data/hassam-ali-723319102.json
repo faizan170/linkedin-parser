@@ -1,0 +1,58 @@
+{
+    "name": "Hassam Ali",
+    "loc": "Pakistan",
+    "profileTitle": "Software Engineer | Data science | Passionate about software industry | Seeking Job opportunities | Machine learning",
+    "connections": "500+ connections",
+    "about": " I love to use computer since 8th class. So i chose to study computer. So from 9th standard i am studying in computer. I\nam about to complete my degree in software engineering.\n\n\n      I...\n            see more\n\n... see more",
+    "experience": [
+        {
+            "role": "Summer Internship",
+            "company": "superApp software house ",
+            "dateRange": "Jul 2019 \u2013 Present",
+            "duration": "8 mos"
+        },
+        {
+            "role": "Career-Fellowship",
+            "company": "Amal Academy",
+            "dateRange": "Jan 2019 \u2013 Present",
+            "duration": "1 yr 2 mos",
+            "location": "Lahore, Pakistan"
+        },
+        {
+            "role": "Student",
+            "company": "Punjab University College of Information Technology,Lahore",
+            "dateRange": "Oct 2016 \u2013 Present",
+            "duration": "3 yrs 5 mos",
+            "location": "Lahore, Pakistan"
+        },
+        {
+            "role": "Ruby on Rails intern",
+            "company": "superApp",
+            "dateRange": "Jul 2019 \u2013 Aug 2019",
+            "duration": "2 mos",
+            "location": "Lahore, Pakistan"
+        }
+    ],
+    "education": [
+        {
+            "institute": "punjab university college of information and technology ",
+            "title": "Bachelors",
+            "studyArea": "Software Engineering",
+            "marks": "3.46 CGPA",
+            "duration": {
+                "start": "2016",
+                "end": "2020"
+            }
+        },
+        {
+            "institute": "Society of Education and Technology Lahore",
+            "title": "Graphics Designer",
+            "studyArea": "Draphics Designening",
+            "marks": "Passed with 2nd position",
+            "duration": {
+                "start": "2016",
+                "end": "2016"
+            }
+        }
+    ]
+}

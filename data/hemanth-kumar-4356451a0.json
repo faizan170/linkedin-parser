@@ -1,0 +1,29 @@
+{
+    "name": "Hemanth Kumar",
+    "loc": "Bengaluru, Karnataka, India",
+    "profileTitle": "Trained Professional Data Scientist Seeking for Data Science job role.",
+    "connections": "338 connections",
+    "about": " \n      Trained Professional Data Scientist Seeking for Data Science Job Role\n... see more",
+    "education": [
+        {
+            "institute": "analytixlabs",
+            "title": "certification",
+            "studyArea": "data science",
+            "marks": "80%",
+            "duration": {
+                "start": "2019",
+                "end": "2020"
+            }
+        },
+        {
+            "institute": "Hindustan Institute of Technology and Science, Kancheepuram",
+            "title": "B.Tech ",
+            "studyArea": "Electronics and communication engineering",
+            "marks": "90%",
+            "duration": {
+                "start": "2015",
+                "end": "2019"
+            }
+        }
+    ]
+}

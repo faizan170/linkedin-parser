@@ -1,0 +1,17 @@
+{
+    "name": "Data Science Career",
+    "loc": "London, United Kingdom",
+    "profileTitle": "Datasciencecareer is a niche, tailored platform for data scientists looking for their perfect data science job.",
+    "connections": "500+ connections",
+    "about": null,
+    "experience": [
+        {
+            "role": "Datasciencecareer",
+            "company": "Datasciencecareer",
+            "type": "Full-time",
+            "dateRange": "Mar 2019 \u2013 Present",
+            "duration": "1 yr",
+            "location": "London, United Kingdom"
+        }
+    ]
+}

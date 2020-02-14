@@ -1,0 +1,154 @@
+{
+    "name": "Kyle McKiou",
+    "loc": "Sarasota, Florida Area",
+    "profileTitle": "I Teach Data Scientists How to Get Jobs",
+    "connections": "500+ connections",
+    "about": " Click the FOLLOW button to be part of my community of 95,000+ data science enthusiasts \ud83d\udc46\n\n\n\n\n      ***Need help landing your first job as a data scientist?***...\n            see more\n\n... see more",
+    "experience": [
+        {
+            "role": "Founder and CEO",
+            "company": "Data Science Dream Job",
+            "dateRange": "Mar 2018 \u2013 Present",
+            "duration": "2 yrs",
+            "location": "Greater Chicago Area"
+        },
+        {
+            "role": "\nCompany Name\nThe Marketing Store, North America\n",
+            "dateRange": "Feb 2018 \u2013 May 2018",
+            "duration": "4 mos"
+        },
+        {
+            "role": "\nTitle\nSr. Director of Data Science\n",
+            "dateRange": "Feb 2018 \u2013 May 2018",
+            "duration": "4 mos",
+            "location": "Greater Chicago Area"
+        },
+        {
+            "role": "\nTitle\nDirector of Data Science\n",
+            "dateRange": "May 2017 \u2013 Feb 2018",
+            "duration": "10 mos",
+            "location": "Greater Chicago Area"
+        },
+        {
+            "role": "Manager, Data Analytics",
+            "company": "Constellation Brands",
+            "dateRange": "Jan 2017 \u2013 May 2017",
+            "duration": "5 mos",
+            "location": "Chicago, Illinois"
+        },
+        {
+            "role": "Lead Data Scientist",
+            "company": "Anheuser-Busch InBev",
+            "dateRange": "Oct 2015 \u2013 Jan 2017",
+            "duration": "1 yr 4 mos",
+            "location": "Champaign, Illinois"
+        },
+        {
+            "role": "Software Engineer",
+            "company": "Riverside Research",
+            "dateRange": "Apr 2014 \u2013 Oct 2015",
+            "duration": "1 yr 7 mos",
+            "location": "Champaign, Illinois"
+        },
+        {
+            "role": "Researcher - Scientific Computing Group",
+            "company": "University of Illinois at Urbana-Champaign",
+            "dateRange": "Jan 2013 \u2013 May 2014",
+            "duration": "1 yr 5 mos",
+            "location": "Urbana, Illinois"
+        },
+        {
+            "role": "Researcher - Parallel Algorithms for Data Analysis and Simulation Group",
+            "company": "Institute for Computational Engineering and Sciences (ICES)",
+            "dateRange": "Jun 2012 \u2013 Dec 2012",
+            "duration": "7 mos",
+            "location": "Austin, Texas"
+        },
+        {
+            "role": "Researcher - Scientific Computing Group",
+            "company": "University of Illinois at Urbana-Champaign",
+            "dateRange": "May 2011 \u2013 May 2012",
+            "duration": "1 yr 1 mo",
+            "location": "Urbana, Illinois"
+        }
+    ],
+    "education": [
+        {
+            "institute": "University of Illinois at Urbana-Champaign",
+            "title": "PhD Program, Master\u2019s Degree",
+            "studyArea": "Computer Science",
+            "duration": {
+                "start": "2013",
+                "end": "2014"
+            }
+        },
+        {
+            "institute": "The University of Texas at Austin",
+            "title": "PhD Fellow",
+            "studyArea": "Computational Science, Engineering, and Mathematics",
+            "duration": {
+                "start": "2012",
+                "end": "2012"
+            }
+        },
+        {
+            "institute": "University of Illinois at Urbana-Champaign",
+            "title": "Bachelor\u2019s Degree",
+            "studyArea": "Mathematics",
+            "duration": {
+                "start": "2010",
+                "end": "2012"
+            }
+        }
+    ],
+    "skills": {
+        "mainSkills": [
+            "Leadership",
+            "Computer Science",
+            "Data Analysis"
+        ],
+        "otherSkills": [
+            {
+                "tag": "Industry Knowledge",
+                "skills": [
+                    "Machine Learning",
+                    "Software Development",
+                    "Research",
+                    "Marketing",
+                    "Customer Insight",
+                    "Strategy",
+                    "Statistics",
+                    "Algorithms",
+                    "Recruiting",
+                    "Agile Methodologies",
+                    "Artificial Intelligence",
+                    "Business Process Improvement"
+                ]
+            },
+            {
+                "tag": "Tools & Technologies",
+                "skills": [
+                    "Python",
+                    "R",
+                    "SQL",
+                    "C++",
+                    "Fortran"
+                ]
+            },
+            {
+                "tag": "Interpersonal Skills",
+                "skills": [
+                    "Management"
+                ]
+            },
+            {
+                "tag": "Other Skills",
+                "skills": [
+                    "Behavioral Science",
+                    "Parallel Programming",
+                    "Job Search"
+                ]
+            }
+        ]
+    }
+}
