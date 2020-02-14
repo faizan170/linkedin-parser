@@ -3,7 +3,7 @@
     "loc": "Pakistan",
     "profileTitle": "Software Engineer | Data science | Passionate about software industry | Seeking Job opportunities | Machine learning",
     "connections": "500+ connections",
-    "about": " I love to use computer since 8th class. So i chose to study computer. So from 9th standard i am studying in computer. I\nam about to complete my degree in software engineering.\n\n\n      I...\n            see more\n\n... see more",
+    "about": " I love to use computer since 8th class. So i chose to study computer. So from 9th standard i am studying in computer. I am about to complete my degree in software engineering. I have good web development knowledge. Even i also created Online Quiz system in my semester project. It was completed in a group of 3 people. I have also joined Amal fellowship for building business skills (e.g Teamwork, leadership, Communication skill etc).\n... see more",
     "experience": [
         {
             "role": "Summer Internship",
@@ -54,5 +54,42 @@
                 "end": "2016"
             }
         }
-    ]
+    ],
+    "skills": {
+        "mainSkills": [
+            "Microsoft Office",
+            "Microsoft Excel",
+            "Leadership"
+        ],
+        "otherSkills": [
+            {
+                "tag": "Industry Knowledge",
+                "skills": [
+                    "Web Development"
+                ]
+            },
+            {
+                "tag": "Tools & Technologies",
+                "skills": [
+                    "Java",
+                    "Microsoft Word",
+                    "SQL",
+                    "HTML",
+                    "C#",
+                    "C++"
+                ]
+            },
+            {
+                "tag": "Interpersonal Skills",
+                "skills": [
+                    "Teamwork"
+                ]
+            }
+        ]
+    },
+    "accomplishments": {
+        "courses": null,
+        "languages": null,
+        "projects": null
+    }
 }

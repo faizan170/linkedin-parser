@@ -3,7 +3,7 @@
     "loc": "Greater Los Angeles Area",
     "profileTitle": "ClaoudML.com | I Teach People Data Science and Analytics",
     "connections": "500+ connections",
-    "about": " I have reached LinkedIn\u2019s maximum connections. Please click the FOLLOW button to get connected \ud83d\udc46.\n\n\n\n\n      My Links (Consulting, Resources, Guides, & More): www.claoudml.com...\n            see more\n\n... see more",
+    "about": " I have reached LinkedIn\u2019s maximum connections. Please click the FOLLOW button to get connected \ud83d\udc46.My Links (Consulting, Resources, Guides, & More): www.claoudml.comJoin my patreon: patreon.com/randylao\n... see more",
     "experience": [
         {
             "role": "Data Science Mentor ",
@@ -94,6 +94,15 @@
                     "Dashboard"
                 ]
             }
+        ]
+    },
+    "accomplishments": {
+        "courses": null,
+        "languages": null,
+        "projects": [
+            "Human Resources Analytics | Understanding Why Employees Leave",
+            "Kaggle's House Prices: Advanced Regression Techniques (Top 40%)",
+            "Kaggle's Titanic Machine Learning from Disaster (Top 9%)"
         ]
     }
 }

@@ -13,5 +13,10 @@
             "duration": "1 yr",
             "location": "London, United Kingdom"
         }
-    ]
+    ],
+    "accomplishments": {
+        "courses": null,
+        "languages": null,
+        "projects": null
+    }
 }

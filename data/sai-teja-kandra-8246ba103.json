@@ -22,5 +22,42 @@
                 "end": "2017"
             }
         }
-    ]
+    ],
+    "skills": {
+        "mainSkills": [
+            "Artificial Intelligence (AI)",
+            "Data Science",
+            "Machine Learning"
+        ],
+        "otherSkills": [
+            {
+                "tag": "Industry Knowledge",
+                "skills": [
+                    "Computer Science",
+                    "Algorithms",
+                    "Computer Vision"
+                ]
+            },
+            {
+                "tag": "Tools & Technologies",
+                "skills": [
+                    "TensorFlow",
+                    "Pandas (Software)"
+                ]
+            },
+            {
+                "tag": "Other Skills",
+                "skills": [
+                    "Deep Learning",
+                    "NumPy",
+                    "Neural Networks"
+                ]
+            }
+        ]
+    },
+    "accomplishments": {
+        "courses": null,
+        "languages": null,
+        "projects": null
+    }
 }

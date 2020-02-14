@@ -54,8 +54,4 @@ def processFile():
             processUrl(url)
 
 
-try:
-    searchAndSave()
-    processFile()
-except:
-    pass
+processFile()

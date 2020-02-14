@@ -25,5 +25,36 @@
                 "end": "2019"
             }
         }
-    ]
+    ],
+    "skills": {
+        "mainSkills": [
+            "Data Science",
+            "Data Analysis",
+            "Data Visualization"
+        ],
+        "otherSkills": [
+            {
+                "tag": "Industry Knowledge",
+                "skills": [
+                    "Data Mining",
+                    "Machine Learning",
+                    "Data Modeling"
+                ]
+            },
+            {
+                "tag": "Tools & Technologies",
+                "skills": [
+                    "R",
+                    "Python",
+                    "Tableau",
+                    "Microsoft Excel"
+                ]
+            }
+        ]
+    },
+    "accomplishments": {
+        "courses": null,
+        "languages": null,
+        "projects": null
+    }
 }

@@ -109,7 +109,6 @@ class BsParser():
                 certificationsList = certificationsList[0].findAll("li")
             else:
                 certificationsList = []
-            print("Total Certifications:", len(certificationsList))
             
             certificationsData = []
             for cert in certificationsList:
@@ -122,10 +121,9 @@ class BsParser():
                 except:
                     pass
                 certificationsData.append(data)
-            print("Total certifications found:", len(certificationsData))
             return certificationsData
         else:
-            print("No certifications found")
+            pass
 
     
     def getUserSkills(self, skills):
@@ -135,7 +133,7 @@ class BsParser():
         userSkillsDetails = {}
         mainSkillsList = []
         for SingleSkill in mainSkills:
-            skill = SingleSkill.find("a", {"class" : "display-block full-width ember-view"})
+            skill = SingleSkill.find("span", {"class" : "pv-skill-category-entity__name-text t-16 t-black t-bold"})
             mainSkillsList.append(skill.text.replace("\n", "").strip())
         userSkillsDetails["mainSkills"] = mainSkillsList
 
@@ -160,24 +158,24 @@ class BsParser():
 
     def getAccomplishments(self, soup):
         acData = {}
-        courses = soup.findAll("div", {"id" : "ember596"})
+        courses = soup.find("section", {"class" : "accordion-panel pv-profile-section pv-accomplishments-block courses ember-view"})
         if courses != None:
-            courses = courses[0].findAll("ul", {"class" : "pv-accomplishments-block__summary-list t-14"})
-            courses = [course.text for course in courses[0].findAll("li")]
+            courses = courses.find("ul")
+            courses = [course.text for course in courses.findAll("li")]
         acData["courses"] = courses
-
-        languages = soup.findAll("div", {"id" : "ember600"})
+        
+        languages = soup.find("section", {"class" : "accordion-panel pv-profile-section pv-accomplishments-block languages ember-view"})
         if languages != None:
-            languages = languages[0].findAll("ul", {"class" : "pv-accomplishments-block__summary-list t-14"})
-            languages = [language.text for language in languages[0].findAll("li")]
+            languagesUl = languages.find("ul")
+            languages = [language.text for language in languagesUl.findAll("li")]
         acData['languages'] = languages
-
-        projects = soup.findAll("div", {"id" : "ember604"})
+        
+        projects = soup.find("section", {"class" : "accordion-panel pv-profile-section pv-accomplishments-block projects ember-view"})
         if projects != None:
-            projects = projects[0].findAll("ul", {"class" : "pv-accomplishments-block__summary-list t-14"})
-            projects = [project.text for project in projects[0].findAll("li")]
-        acData['projects'] = projects
-
+            projects = projects.find("ul")
+            if projects !=None:
+                projects = [project.text for project in projects.findAll("li")]
+        acData["projects"] = projects
         return acData
 
     def parseProfile(self, soup):
@@ -227,7 +225,6 @@ class BsParser():
                 mainData.update({"skills" : skills})
         except:
             pass
-
 
         # Accomplishments
         try:
