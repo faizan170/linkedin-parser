@@ -40,10 +40,45 @@ class BsParser():
         '''
             Get user experience section
         '''
-        uls = exp_section.findAll("ul")
+        exp = exp_section.find("ul")
+        if exp == None:
+            return None
+        listExp = exp.findAll("li", {"class" : "pv-entity__position-group-pager pv-profile-section__list-item ember-view"})
+        if len(listExp) == 0:
+            return None
         experience = []
-        if len(uls) > 0:
-            for exp in uls[0].findAll("li"):
+        for exp in listExp:
+            multiRole = exp.find("div", {"class" : "pv-entity__company-summary-info"})
+            if multiRole != None:
+                singleExp = {}
+                company = multiRole.find("h3", {"class": "t-16 t-black t-bold"})
+                if company != None:
+                    singleExp["company"] = company.findAll("span")[1].text
+                duration = multiRole.find("h4", {"class" : "t-14 t-black t-normal"})
+                if duration != None:
+                    singleExp["duration"] = duration.findAll("span")[1].text
+            
+                roles = []
+                # Roles
+                if exp.find("ul") != None:
+                    for singleRole in exp.findAll("li", {"class" : "pv-entity__position-group-role-item"}):
+                        roleDict = {}
+                        #data = singleRole.find("div", {"class" : "pv-entity__summary-info-v2 pv-entity__summary-info--background-section pv-entity__summary-info-margin-top mb2"})
+
+                        try:
+                            roleDict["role"] = singleRole.find("h3", {"class" : "t-14 t-black t-bold"}).findAll("span")[1].text
+                            roleDict["dateRange"] = singleRole.find("h4", {"class" : "pv-entity__date-range t-14 t-black--light t-normal"}).findAll("span")[1].text
+                            roleDict["duration"] = singleRole.find("h4", {"class" : "t-14 t-black--light t-normal"}).findAll("span")[1].text
+                            if singleRole.find("h4", {"class" : "pv-entity__location t-14 t-black--light t-normal block"}) != None:
+                                roleDict["location"] = singleRole.find("h4", {"class" : "pv-entity__location t-14 t-black--light t-normal block"}).findAll("span")[1].text
+                        
+                        except:
+                            continue
+                        roles.append(roleDict)
+                    singleExp["roles"] = roles
+
+                experience.append(singleExp)
+            else:
                 singleExp = {"role" : exp.findAll("h3")[0].text}
                 
                 # Check company title
@@ -109,6 +144,7 @@ class BsParser():
                 certificationsList = certificationsList[0].findAll("li")
             else:
                 certificationsList = []
+            print("Total Certifications:", len(certificationsList))
             
             certificationsData = []
             for cert in certificationsList:
@@ -121,9 +157,10 @@ class BsParser():
                 except:
                     pass
                 certificationsData.append(data)
+            print("Total certifications found:", len(certificationsData))
             return certificationsData
         else:
-            pass
+            print("No certifications found")
 
     
     def getUserSkills(self, skills):
@@ -191,47 +228,49 @@ class BsParser():
         mainData.update({"about" : about})
 
         # Experience
-        try:
+        if 1==1:
             exp_section = soup.find('section', {'id': 'experience-section'})
             if exp_section != None:
                 exp = self.getExperienceDetails(exp_section)
                 mainData.update({"experience" : exp})
-        except:
-            pass
+        else:
+            print("Error in Experience parse")
 
         # Education details
-        try:
+        if True:
             educationSection = soup.find('section', {'id': 'education-section'})
             if educationSection != None:
                 edu = self.getEducationDetails(educationSection)
                 mainData.update({"education" : edu})
-        except:
-            pass
+        else:
+            print("Error in Education Parse")
 
         # Certifications
-        try:
+        if True:
             certificationsSection = soup.find('section', {'id': 'certifications-section'})
             if certificationsSection != None:
                 cert = self.getCertifications(certificationsSection)
                 mainData.update({"certifications" : cert})
-        except:
-            pass
+        else:
+            print("Error in Certifications parse")
 
         # Skills
-        try:
+        print("Working with skills")
+        if True:
             skills = soup.find("section", {"class" : "pv-profile-section pv-skill-categories-section artdeco-container-card ember-view"})
             if skills != None:
                 skills = self.getUserSkills(skills)
                 mainData.update({"skills" : skills})
-        except:
-            pass
+        else:
+            print("Error in Skills parse")
 
+        print("Working with accomplishments")
         # Accomplishments
-        try:
+        if True:
             acc = self.getAccomplishments(soup)
             mainData.update({"accomplishments" : acc})
-        except:
-            pass
+        else:
+            print("Error in accomplishments parse")
         
         return mainData
 

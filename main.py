@@ -13,16 +13,17 @@ bsHelper.loginLinkedin(email, password)
 bsParser = BsParser()
 utils = Utils()
 
-
+# Change according to your requirements. For 1 page you get 10 results.
+URL_TO_SEARCH = "https://www.linkedin.com/search/results/people/?keywords=data%20science%20job&origin=SWITCH_SEARCH_VERTICAL"
+noOfPages = 1
+    
 # Here we have set no of pages 1. For hundered profiles set number of pages 10
 
-def searchAndSave():
+def searchAndSave(URL_TO_SEARCH, noOfPages):
     # Search profiles
-    URL_TO_SEARCH = "https://www.linkedin.com/search/results/people/?keywords=data%20science%20job&origin=SWITCH_SEARCH_VERTICAL"
-    noOfPages = 1
     data = []
     for i in range(1,noOfPages + 1):
-        print("Processing:", i)
+        print("Processing Page:", i)
         url = URL_TO_SEARCH
         if i > 1:
             url = url + "&page={}".format(i)
@@ -53,5 +54,8 @@ def processFile():
             print("Processing:", fileName)
             processUrl(url)
 
-
-processFile()
+try:
+    searchAndSave(URL_TO_SEARCH, noOfPages)
+    processFile()
+except:
+    pass
