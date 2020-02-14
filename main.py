@@ -1,6 +1,6 @@
-from BsHelper import BsHelper
-from BsParser import BsParser
-from utils import Utils
+from scripts.BsHelper import BsHelper
+from scripts.BsParser import BsParser
+from scripts.utils import Utils
 import pandas as pd
 import os
 
@@ -32,7 +32,7 @@ def searchAndSave():
             data.append(v)
 
     df = pd.DataFrame(data, columns=["name", "url", "connection"])
-    df.to_csv("accounts.csv", index=None)
+    df.to_csv("csv/accounts.csv", index=None)
 
 
 def processUrl(url):
@@ -44,7 +44,7 @@ def processUrl(url):
     print("Saved to: ", fileName)
 
 def processFile():
-    data = pd.read_csv("accounts.csv")
+    data = pd.read_csv("csv/accounts.csv")
     for row in data.iterrows():
         url = row[1]["url"]
         fileName = "data/" + url.split("/")[-2] + ".json"
