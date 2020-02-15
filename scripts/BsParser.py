@@ -90,17 +90,28 @@ class BsParser():
                 if len(typeJob) == 1:
                     singleExp["type"] = typeJob[0].text
 
-                dateRange = exp.findAll("h4", {"class" : "pv-entity__date-range t-14 t-black--light t-normal"})
-                singleExp["dateRange"] = dateRange[0].findAll("span")[1].text
+                try:
+                    dateRange = exp.find("h4", {"class" : "pv-entity__date-range t-14 t-black--light t-normal"})
+                    if dateRange != None:
+                        singleExp["dateRange"] = dateRange[0].findAll("span")[1].text
+                except:
+                    pass
 
                 # Duration of work
-                duration = exp.findAll("h4", {"class" : "t-14 t-black--light t-normal"})
-                singleExp["duration"] = duration[0].findAll("span")[1].text
+                try:
+                    duration = exp.find("h4", {"class" : "t-14 t-black--light t-normal"})
+                    if duration != None:
+                        singleExp["duration"] = duration[0].findAll("span")[1].text
+                except:
+                    pass
 
                 # Location of company
-                location = exp.findAll("h4", {"class" : "pv-entity__location t-14 t-black--light t-normal block"})
-                if len(location) == 1:
-                    singleExp["location"] = location[0].findAll("span")[1].text
+                try:
+                    location = exp.findAll("h4", {"class" : "pv-entity__location t-14 t-black--light t-normal block"})
+                    if len(location) == 1:
+                        singleExp["location"] = location[0].findAll("span")[1].text
+                except:
+                    pass
 
                 experience.append(singleExp)
         return experience
@@ -228,49 +239,54 @@ class BsParser():
         mainData.update({"about" : about})
 
         # Experience
-        if 1==1:
+        try:
             exp_section = soup.find('section', {'id': 'experience-section'})
             if exp_section != None:
                 exp = self.getExperienceDetails(exp_section)
                 mainData.update({"experience" : exp})
-        else:
-            print("Error in Experience parse")
+        except:
+            pass
+            # print("Error in Experience parse")
 
         # Education details
-        if True:
+        try:
             educationSection = soup.find('section', {'id': 'education-section'})
             if educationSection != None:
                 edu = self.getEducationDetails(educationSection)
                 mainData.update({"education" : edu})
-        else:
-            print("Error in Education Parse")
+        except:
+            pass
+            #print("Error in Education Parse")
 
         # Certifications
-        if True:
+        try:
             certificationsSection = soup.find('section', {'id': 'certifications-section'})
             if certificationsSection != None:
                 cert = self.getCertifications(certificationsSection)
                 mainData.update({"certifications" : cert})
-        else:
-            print("Error in Certifications parse")
+        except:
+            pass
+            #print("Error in Certifications parse")
 
         # Skills
         print("Working with skills")
-        if True:
+        try:
             skills = soup.find("section", {"class" : "pv-profile-section pv-skill-categories-section artdeco-container-card ember-view"})
             if skills != None:
                 skills = self.getUserSkills(skills)
                 mainData.update({"skills" : skills})
-        else:
-            print("Error in Skills parse")
+        except:
+            pass
+            #print("Error in Skills parse")
 
         print("Working with accomplishments")
         # Accomplishments
-        if True:
+        try:
             acc = self.getAccomplishments(soup)
             mainData.update({"accomplishments" : acc})
-        else:
-            print("Error in accomplishments parse")
+        except:
+            pass
+            #print("Error in accomplishments parse")
         
         return mainData
 

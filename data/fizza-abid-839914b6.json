@@ -1,0 +1,87 @@
+{
+    "name": "Fizza Abid",
+    "loc": "Pakistan",
+    "profileTitle": "Software Engineer at Techlogix || Data Science Enthusiast",
+    "connections": "444 connections",
+    "about": " A highly motivated and enthusiastic individual who can turn data into an asset by extracting meaningful insights from the data and have hands on practice on data wrangling and exploratory data analysis. Able to use own initiative and with a team under pressure to achieve goals and objectives.  Always interested in learning new things and believes that there is a room of improvement in everyone.  \n... see more",
+    "experience": [
+        {
+            "role": "Software Engineer",
+            "company": "Techlogix",
+            "location": "Karachi"
+        }
+    ],
+    "certifications": [
+        {
+            "title": "Cleaning Data in Python",
+            "issuingCompany": "DataCamp"
+        },
+        {
+            "title": "Importing Data in Python (Part 2)",
+            "issuingCompany": "DataCamp"
+        },
+        {
+            "title": "What is Data Science",
+            "issuingCompany": "Coursera"
+        },
+        {
+            "title": "Data Visualization with Seaborn",
+            "issuingCompany": "DataCamp"
+        }
+    ],
+    "skills": {
+        "mainSkills": [
+            "Python",
+            "R",
+            "MySQL"
+        ],
+        "otherSkills": [
+            {
+                "tag": "Industry Knowledge",
+                "skills": [
+                    "Statistics",
+                    "Machine Learning",
+                    "Data Visualization",
+                    "Android Development",
+                    "Core Banking"
+                ]
+            },
+            {
+                "tag": "Tools & Technologies",
+                "skills": [
+                    "Java",
+                    "PL/SQL",
+                    "JavaScript",
+                    "Oracle SQL Developer",
+                    "Oracle Database",
+                    "SQL"
+                ]
+            },
+            {
+                "tag": "Other Skills",
+                "skills": [
+                    "Data Science",
+                    "Flexcube",
+                    "Data Analytics",
+                    "Deep Learning",
+                    "Business Insights",
+                    "Natural Language Processing (NLP)"
+                ]
+            }
+        ]
+    },
+    "accomplishments": {
+        "courses": null,
+        "languages": null,
+        "projects": [
+            "SMS Module in Oracle Flexcube",
+            "Rumor Detection of Pulwama Attack Tweets.",
+            "Towards Constraint Learning and Optimization to Document Clustering using Semi Supervised Learning.",
+            "Career Diary- A Machine Learning and Web Based Job Portal",
+            "Fit or Flab- A fitness tracker Android Application",
+            "Airport Management System",
+            "Accounting Software",
+            "Game Arena- Game Rental Android Application."
+        ]
+    }
+}

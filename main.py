@@ -15,7 +15,7 @@ utils = Utils()
 
 # Change according to your requirements. For 1 page you get 10 results.
 URL_TO_SEARCH = "https://www.linkedin.com/search/results/people/?keywords=data%20science%20job&origin=SWITCH_SEARCH_VERTICAL"
-noOfPages = 1
+noOfPages = 5
     
 # Here we have set no of pages 1. For hundered profiles set number of pages 10
 
@@ -27,7 +27,7 @@ def searchAndSave(URL_TO_SEARCH, noOfPages):
         url = URL_TO_SEARCH
         if i > 1:
             url = url + "&page={}".format(i)
-        searchSoup = bsHelper.getProfileSearch(URL_TO_SEARCH)
+        searchSoup = bsHelper.getProfileSearch(url)
         results = bsParser.processSearchResults(searchSoup)
         for v in results:
             data.append(v)
@@ -51,11 +51,11 @@ def processFile():
         fileName = "data/" + url.split("/")[-2] + ".json"
         
         if not os.path.exists(fileName):
-            print("Processing:", fileName)
+            print("Processing:", fileName.split("/")[1])
             processUrl(url)
-
 try:
     searchAndSave(URL_TO_SEARCH, noOfPages)
     processFile()
 except:
     pass
+

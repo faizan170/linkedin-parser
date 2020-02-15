@@ -70,7 +70,6 @@ class BsHelper():
                 self.browser.execute_script('document.querySelectorAll(".lt-line-clamp__ellipsis:not(.lt-line-clamp__ellipsis--dummy) .lt-line-clamp__more").forEach(el => el.click())')
             except:
                 pass
-        print(clicks)
 
 
 
