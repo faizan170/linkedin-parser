@@ -105,6 +105,7 @@ class BsParser():
                 '''
                     If user has only 1 role in a company
                 '''
+                # Get role of job
                 singleExp = {"role" : exp.findAll("h3")[0].text}
                 
                 # Check company title
@@ -112,33 +113,34 @@ class BsParser():
                 if len(company) == 1:
                     singleExp["company"] = company[0].text
                 
+                # Get type of job
                 typeJob = exp.findAll("p", {"class": "pv-entity__secondary-title t-14 t-black t-normal separator"})
                 if len(typeJob) == 1:
                     singleExp["type"] = typeJob[0].text
 
+                # Get date range of job
                 try:
                     dateRange = exp.find("h4", {"class" : "pv-entity__date-range t-14 t-black--light t-normal"})
                     if dateRange != None:
-                        dateRange = dateRange[0].findAll("span")[1].text
+                        dateRange = dateRange.findAll("span")[1].text
                         if len(dateRange.split("\u2013")) == 2:
                             dateRange = {"start" : dateRange.split("\u2013")[0].strip(), "end" : dateRange.split("\u2013")[1].strip()}
                         singleExp["dateRange"] = dateRange    
                 except:
                     pass
 
-
+                # Get details of the give job
                 details = exp.find("div", {"class" : "pv-entity__extra-details ember-view"})
                 if details != None:
                     singleExp["jobDetails"] = details.text.replace("see more", "").replace("…", "").strip()
 
-                # Duration of work
+                # Get duration of job
                 try:
                     duration = exp.find("h4", {"class" : "t-14 t-black--light t-normal"})
-                    if duration != None:
-                        singleExp["duration"] = duration[0].findAll("span")[1].text
+                    singleExp["duration"] = duration.findAll("span")[1].text
                 except:
                     pass
-
+                
                 # Location of company
                 try:
                     location = exp.findAll("h4", {"class" : "pv-entity__location t-14 t-black--light t-normal block"})
@@ -154,10 +156,10 @@ class BsParser():
         '''
             Get user education details
         '''
-        educationList = educationSection.findAll("ul")
+        educationList = educationSection.find("ul")
         educationData = []
-        if len(educationList) > 0:
-            for edu in educationList[0].findAll("li"):
+        if educationList != None:
+            for edu in educationList.findAll("li", {"class" : "pv-profile-section__list-item pv-education-entity pv-profile-section__card-item ember-view"}):
                 data = {}
                 # User institute
                 data["institute"] = edu.findAll("h3", {"class" : "pv-entity__school-name t-16 t-black t-bold"})[0].text
@@ -177,8 +179,16 @@ class BsParser():
                 if len(marks) == 1:
                     data["marks"] = marks[0].findAll("span")[1].text
                 # Duration
-                data["duration"] = edu.findAll("p", {"class" : "pv-entity__dates t-14 t-black--light t-normal"})[0].findAll("span")[1]
-                data["duration"] = {"start" : data["duration"].findAll("time")[0].text, "end" : data["duration"].findAll("time")[1].text}
+                duration = edu.find("p", {"class" : "pv-entity__dates t-14 t-black--light t-normal"})
+                if duration != None:
+                    duration = duration.findAll("span")[1]
+                    if len(duration.findAll("time")) == 1:
+                        duration = {"start" : None, "end" : duration.find("time").text}
+                    elif len(duration.findAll("time")) == 2:
+                        duration = {"start" : duration.findAll("time")[0].text, "end" : duration.findAll("time")[1].text}
+                else:
+                    duration = None
+                data["duration"] = duration
                 educationData.append(data)
         return educationData
 
@@ -211,15 +221,30 @@ class BsParser():
 
     
     def getUserSkills(self, skills):
+        # Get main Skills
         mainSkills = skills.findAll("ol", {"class" : "pv-skill-categories-section__top-skills pv-profile-section__section-info section-info pb1"})
         mainSkills = mainSkills[0].findAll("li", {"class":"pv-skill-category-entity__top-skill pv-skill-category-entity pb3 pt4 pv-skill-endorsedSkill-entity relative ember-view"})
-        
+        # Parse and store main skills
         userSkillsDetails = {}
         mainSkillsList = []
         for SingleSkill in mainSkills:
+            # Total endorsements get
+            totalEndorsements = SingleSkill.find("span", {"class" : "pv-skill-category-entity__endorsement-count t-14 t-black--light t-normal"})
+            # Get skill text
             skill = SingleSkill.find("span", {"class" : "pv-skill-category-entity__name-text t-16 t-black t-bold"})
-            mainSkillsList.append(skill.text.replace("\n", "").strip())
+            # If no total endorsements text found. Set it to 0
+            if totalEndorsements == None:
+                totalEndorsements = 0
+            else:
+                totalEndorsements = totalEndorsements.text
+
+            # Add as dictionary object to mainSkillsList
+            sd = {"title" : skill.text.replace("\n", "").strip(), "endorsements" : totalEndorsements}
+            mainSkillsList.append(sd)
         userSkillsDetails["mainSkills"] = mainSkillsList
+
+
+        # Get other technical skills
         try:
             otherSkills = skills.find("div", {"class" : "pv-skill-categories-section__expanded"})
             otherSkillsMain = otherSkills.findAll("div", {"class" : "pv-skill-category-list pv-profile-section__section-info mb6 ember-view"})
@@ -244,6 +269,9 @@ class BsParser():
 
 
     def getUserRecommendations(self, recommendations):
+        '''
+            Count total recommendations given or received by user
+        '''
         recs = recommendations.findAll("artdeco-tab")
         if len(recs) == 2:
             recommendations = {"received" : re.findall(r'\d+', recs[0].text.replace("\n", "").strip())[0],
@@ -335,12 +363,12 @@ class BsParser():
 
         # Skills
         print("\t>>>Working with skills")
-        try:
+        if 1==1:
             skills = soup.find("section", {"class" : "pv-profile-section pv-skill-categories-section artdeco-container-card ember-view"})
             if skills != None:
                 skills = self.getUserSkills(skills)
                 mainData.update({"skills" : skills})
-        except:
+        else:
             print("\t>>> No skills found")
 
 

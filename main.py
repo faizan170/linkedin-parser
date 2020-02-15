@@ -16,11 +16,19 @@ utils = Utils()
 # Change according to your requirements. For 1 page you get 10 results.
 URL_TO_SEARCH = "https://www.linkedin.com/search/results/people/?keywords=data%20science%20job&origin=SWITCH_SEARCH_VERTICAL"
 noOfPages = 3
-    
+DATA_DIR = "data"
+CSV_DIR = "csv"
+CSV_NAME = "accounts.csv"
 # Here we have set no of pages 1. For hundered profiles set number of pages 10
+
+def createDir(path):
+    if not os.path.exists(path):
+        os.mkdir(path)
+
 
 def searchAndSave(URL_TO_SEARCH, noOfPages):
     # Search profiles
+    createDir(CSV_DIR)
     data = []
     for i in range(1,noOfPages + 1):
         try:
@@ -38,14 +46,14 @@ def searchAndSave(URL_TO_SEARCH, noOfPages):
     df = pd.DataFrame(data, columns=["name", "url", "connection"])
     print("[INFO] - Current data shape", df.shape)
     try:
-        print("Saved to csv/accounts.csv")
-        df.to_csv("csv/accounts.csv", index=None)
+        print("Saved to {}".format(os.path.join(CSV_DIR, CSV_NAME)))
+        df.to_csv(os.path.join(CSV_DIR, CSV_NAME), index=None)
     except:
         print("[INFO] - Error Saving CSV file")
 
 
 def processUrl(url):
-    fileName = "data/" + url.split("/")[-2] + ".json"
+    fileName = os.path.join(DATA_DIR, url.split("/")[-2] + ".json")
     soup = bsHelper.getProfilePage(url)
     profile = bsParser.parseProfile(soup)
 
@@ -53,19 +61,20 @@ def processUrl(url):
     print("Saved to: ", fileName)
 
 def processFile():
-    data = pd.read_csv("csv/accounts.csv")
+    createDir(DATA_DIR)
+    data = pd.read_csv(os.path.join(CSV_DIR, CSV_NAME))
     for row in data.iterrows():
         url = row[1]["url"]
-        fileName = "data/" + url.split("/")[-2] + ".json"
+        fileName = url.split("/")[-2]
         
         if not os.path.exists(fileName):
-            print("Processing:", fileName.split("/")[1])
+            print("Processing:", fileName)
             processUrl(url)
 
 
 # Search for profiles
-searchAndSave(URL_TO_SEARCH, noOfPages)
+#searchAndSave(URL_TO_SEARCH, noOfPages)
 
 # Process file
-processFile()
-
+#processFile()
+processUrl("https://www.linkedin.com/in/devendra-prasat2794/")
