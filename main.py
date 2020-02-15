@@ -15,7 +15,7 @@ utils = Utils()
 
 # Change according to your requirements. For 1 page you get 10 results.
 URL_TO_SEARCH = "https://www.linkedin.com/search/results/people/?keywords=data%20science%20job&origin=SWITCH_SEARCH_VERTICAL"
-noOfPages = 5
+noOfPages = 3
     
 # Here we have set no of pages 1. For hundered profiles set number of pages 10
 
@@ -31,9 +31,14 @@ def searchAndSave(URL_TO_SEARCH, noOfPages):
         results = bsParser.processSearchResults(searchSoup)
         for v in results:
             data.append(v)
-
+    
     df = pd.DataFrame(data, columns=["name", "url", "connection"])
-    df.to_csv("csv/accounts.csv", index=None)
+    print("[INFO] - Current data shape", df.shape)
+    try:
+        print("Saved to csv/accounts.csv")
+        df.to_csv("csv/accounts.csv", index=None)
+    except:
+        print("[INFO] - Error Saving CSV file")
 
 
 def processUrl(url):
@@ -53,9 +58,12 @@ def processFile():
         if not os.path.exists(fileName):
             print("Processing:", fileName.split("/")[1])
             processUrl(url)
-try:
-    searchAndSave(URL_TO_SEARCH, noOfPages)
-    processFile()
-except:
-    pass
+
+
+# Search for profiles
+searchAndSave(URL_TO_SEARCH, noOfPages)
+
+# Process file
+processFile()
+
 

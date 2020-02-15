@@ -1,0 +1,110 @@
+{
+    "name": "Sadhna Rohilla",
+    "loc": "Ambala, Haryana, India",
+    "profileTitle": "Actively looking for job in Machine learning| Data Science | NLP",
+    "connections": "500+ connections",
+    "about": " Curiosity and Creativity are the two aspects that always push me to dive deep into the data science world. How the journey started?During my previous job at Medizinn, a water testing equipment manufacturing company, one question that always occupied my mind was , Why do the customers buy our product?and finding the answer lead me to discover that the reactions, satisfaction and consumption of a particular product by customers can easily be understood from the \"Data patterns\" That was a start and working days acquiring new  skills, working with non-real data  and applying machine learning algorithm to them have made me more keen to learn more as how to  work with real-data and implement them in real life scenarios.Seeking  for an opportunity where i can apply my creativity and technical skills to explore my potential with a progressive organization.\n... see more",
+    "experience": [
+        {
+            "role": "Research Associate",
+            "company": "Medizinn",
+            "location": "Ambala Area, India"
+        },
+        {
+            "role": "Design Engineer",
+            "company": "Tech Qualcer",
+            "location": "Ambala Area, India"
+        },
+        {
+            "role": "Lecturer",
+            "company": "Jai Polytechnic College",
+            "location": "Adhoi, Ambala"
+        }
+    ],
+    "education": [
+        {
+            "institute": "HCTM TECHNICAL CAMPUS, KAITHAL",
+            "title": "Bachelor of Technology (B.Tech.)",
+            "studyArea": "Electrical and Electronics Engineering",
+            "duration": {
+                "start": "2009",
+                "end": "2013"
+            }
+        }
+    ],
+    "certifications": [
+        {
+            "title": " Deep Learning Specialization",
+            "issuingCompany": "Coursera"
+        },
+        {
+            "title": " Sequence Models",
+            "issuingCompany": "Coursera"
+        },
+        {
+            "title": "Convolutional Neural Networks",
+            "issuingCompany": "Coursera"
+        },
+        {
+            "title": "Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization",
+            "issuingCompany": "Coursera"
+        },
+        {
+            "title": "Structuring Machine Learning Projects",
+            "issuingCompany": "Coursera"
+        },
+        {
+            "title": "Neural Networks and Deep Learning",
+            "issuingCompany": "Coursera"
+        },
+        {
+            "title": " IBM Data Science Professional Certificate Specialization",
+            "issuingCompany": "Coursera"
+        },
+        {
+            "title": "Applied Data Science Capstone",
+            "issuingCompany": "Coursera"
+        }
+    ],
+    "skills": {
+        "mainSkills": [
+            "Python (Programming Language)",
+            "SQL",
+            "Data Analysis"
+        ],
+        "otherSkills": [
+            {
+                "tag": "Industry Knowledge",
+                "skills": [
+                    "Machine Learning",
+                    "Data Visualization"
+                ]
+            },
+            {
+                "tag": "Tools & Technologies",
+                "skills": [
+                    "pandas"
+                ]
+            },
+            {
+                "tag": "Other Skills",
+                "skills": [
+                    "Matplotlib",
+                    "Scikit-Learn",
+                    "Deep Learning",
+                    "Predictive Modeling",
+                    "Natural Language Processing (NLP)"
+                ]
+            }
+        ]
+    },
+    "accomplishments": {
+        "courses": [
+            " IBM Data Science Professional Certificate Specialization",
+            "Deep Learning Specialization",
+            "Machine Learning Stanford university"
+        ],
+        "languages": null,
+        "projects": null
+    }
+}

@@ -7,22 +7,34 @@ class BsParser():
             Get user basic details such as name, location, title and connections
         '''
         userCompleteData = {}
-        name_loc = name_div.find_all('ul')
-        name = name_loc[0].find('li').get_text().strip()
-        userCompleteData["name"] = name
+        try:
+            name_loc = name_div.find_all('ul')
+            name = name_loc[0].find('li').get_text().strip()
+            userCompleteData["name"] = name
+        except:
+            print("\t>>> Cannot get name")
 
         # Get location
-        loc = name_loc[1].find('li').get_text().strip()
-        userCompleteData["loc"] = loc
+        try:
+            loc = name_loc[1].find('li').get_text().strip()
+            userCompleteData["loc"] = loc
+        except:
+            print("\t>>> Cannot get location")
 
         # Profile title
-        profile_title = name_div.find('h2').get_text().strip()
-        userCompleteData["profileTitle"] = profile_title    
+        try:
+            profile_title = name_div.find('h2').get_text().strip()
+            userCompleteData["profileTitle"] = profile_title    
+        except:
+            print("\t>>> No profile title")
 
         # Connections
-        connection = name_loc[1].find_all('li')
-        connection = connection[1].get_text().strip()
-        userCompleteData["connections"] = connection
+        try:
+            connection = name_loc[1].find_all('li')
+            connection = connection[1].get_text().strip()
+            userCompleteData["connections"] = connection
+        except:
+            print("\t>>> Cannot get connections")
 
         return userCompleteData
 
@@ -50,6 +62,9 @@ class BsParser():
         for exp in listExp:
             multiRole = exp.find("div", {"class" : "pv-entity__company-summary-info"})
             if multiRole != None:
+                '''
+                    If user has multiple roles in 1 company
+                '''
                 singleExp = {}
                 company = multiRole.find("h3", {"class": "t-16 t-black t-bold"})
                 if company != None:
@@ -79,6 +94,9 @@ class BsParser():
 
                 experience.append(singleExp)
             else:
+                '''
+                    If user has only 1 role in a company
+                '''
                 singleExp = {"role" : exp.findAll("h3")[0].text}
                 
                 # Check company title
@@ -155,7 +173,6 @@ class BsParser():
                 certificationsList = certificationsList[0].findAll("li")
             else:
                 certificationsList = []
-            print("Total Certifications:", len(certificationsList))
             
             certificationsData = []
             for cert in certificationsList:
@@ -168,7 +185,6 @@ class BsParser():
                 except:
                     pass
                 certificationsData.append(data)
-            print("Total certifications found:", len(certificationsData))
             return certificationsData
         else:
             print("No certifications found")
@@ -184,46 +200,61 @@ class BsParser():
             skill = SingleSkill.find("span", {"class" : "pv-skill-category-entity__name-text t-16 t-black t-bold"})
             mainSkillsList.append(skill.text.replace("\n", "").strip())
         userSkillsDetails["mainSkills"] = mainSkillsList
+        try:
+            otherSkills = skills.find("div", {"class" : "pv-skill-categories-section__expanded"})
+            otherSkillsMain = otherSkills.findAll("div", {"class" : "pv-skill-category-list pv-profile-section__section-info mb6 ember-view"})
 
-        otherSkills = skills.find("div", {"class" : "pv-skill-categories-section__expanded"})
-        otherSkillsMain = otherSkills.findAll("div", {"class" : "pv-skill-category-list pv-profile-section__section-info mb6 ember-view"})
-
-        otherSkills = []
-        for singleMain in otherSkillsMain:
-            skillsListChild = []
-            headingMain = singleMain.find("h3", {"class" : "pb2 t-16 t-black--light t-normal pv-skill-categories-section__secondary-skill-heading"}).text.replace("\n", "").strip()
-            for singleSkill in singleMain.find("ol").findAll("li"):
-                skillsListChild.append(singleSkill.find("span").text.strip())
+            otherSkills = []
+            for singleMain in otherSkillsMain:
+                skillsListChild = []
+                headingMain = singleMain.find("h3", {"class" : "pb2 t-16 t-black--light t-normal pv-skill-categories-section__secondary-skill-heading"}).text.replace("\n", "").strip()
+                for singleSkill in singleMain.find("ol").findAll("li"):
+                    skillsListChild.append(singleSkill.find("span").text.strip())
+                    
+                otherSkills.append({
+                    "tag" : headingMain,
+                    "skills" : skillsListChild
+                })
                 
-            otherSkills.append({
-                "tag" : headingMain,
-                "skills" : skillsListChild
-            })
-            
-        userSkillsDetails["otherSkills"] = otherSkills
+            userSkillsDetails["otherSkills"] = otherSkills
 
+        except:
+            print("\t>>> No other skills found")
         return userSkillsDetails
 
     def getAccomplishments(self, soup):
         acData = {}
-        courses = soup.find("section", {"class" : "accordion-panel pv-profile-section pv-accomplishments-block courses ember-view"})
-        if courses != None:
-            courses = courses.find("ul")
-            courses = [course.text for course in courses.findAll("li")]
-        acData["courses"] = courses
+
+        # Getting courses from accomplishments
+        try:
+            courses = soup.find("section", {"class" : "accordion-panel pv-profile-section pv-accomplishments-block courses ember-view"})
+            if courses != None:
+                courses = courses.find("ul")
+                courses = [course.text for course in courses.findAll("li")]
+            acData["courses"] = courses
+        except:
+            print("\t>>> No courses found")
         
-        languages = soup.find("section", {"class" : "accordion-panel pv-profile-section pv-accomplishments-block languages ember-view"})
-        if languages != None:
-            languagesUl = languages.find("ul")
-            languages = [language.text for language in languagesUl.findAll("li")]
-        acData['languages'] = languages
+        # Getting languages from accomplishments
+        try:
+            languages = soup.find("section", {"class" : "accordion-panel pv-profile-section pv-accomplishments-block languages ember-view"})
+            if languages != None:
+                languagesUl = languages.find("ul")
+                languages = [language.text for language in languagesUl.findAll("li")]
+            acData['languages'] = languages
+        except:
+            print("\t>>> No languages found")
         
-        projects = soup.find("section", {"class" : "accordion-panel pv-profile-section pv-accomplishments-block projects ember-view"})
-        if projects != None:
-            projects = projects.find("ul")
-            if projects !=None:
-                projects = [project.text for project in projects.findAll("li")]
-        acData["projects"] = projects
+        # Getting projects from accomplishments
+        try:
+            projects = soup.find("section", {"class" : "accordion-panel pv-profile-section pv-accomplishments-block projects ember-view"})
+            if projects != None:
+                projects = projects.find("ul")
+                if projects !=None:
+                    projects = [project.text for project in projects.findAll("li")]
+            acData["projects"] = projects
+        except:
+            print("\t>>> No projects found")
         return acData
 
     def parseProfile(self, soup):
@@ -236,57 +267,58 @@ class BsParser():
 
         # About section
         about = self.getAboutSection(soup)
-        mainData.update({"about" : about})
+        if about == None:
+            print("\t>>> No about section found")
+        else:
+            mainData.update({"about" : about})
 
         # Experience
+        print("\t>>> Working with Experience")
         try:
             exp_section = soup.find('section', {'id': 'experience-section'})
             if exp_section != None:
                 exp = self.getExperienceDetails(exp_section)
                 mainData.update({"experience" : exp})
         except:
-            pass
-            # print("Error in Experience parse")
+            print("\t>>> No experience found")
 
         # Education details
+        print("\t>>> Working with Education")
         try:
             educationSection = soup.find('section', {'id': 'education-section'})
             if educationSection != None:
                 edu = self.getEducationDetails(educationSection)
                 mainData.update({"education" : edu})
         except:
-            pass
-            #print("Error in Education Parse")
+            print("\t>>> No education details found")
 
         # Certifications
+        print("\t>>> Working with certifications")
         try:
             certificationsSection = soup.find('section', {'id': 'certifications-section'})
             if certificationsSection != None:
                 cert = self.getCertifications(certificationsSection)
                 mainData.update({"certifications" : cert})
         except:
-            pass
-            #print("Error in Certifications parse")
+            print("\t>>> No certifications found")
 
         # Skills
-        print("Working with skills")
+        print("\t>>>Working with skills")
         try:
             skills = soup.find("section", {"class" : "pv-profile-section pv-skill-categories-section artdeco-container-card ember-view"})
             if skills != None:
                 skills = self.getUserSkills(skills)
                 mainData.update({"skills" : skills})
         except:
-            pass
-            #print("Error in Skills parse")
+            print("\t>>> No skills found")
 
-        print("Working with accomplishments")
+        print("\t>>>Working with accomplishments")
         # Accomplishments
         try:
             acc = self.getAccomplishments(soup)
             mainData.update({"accomplishments" : acc})
         except:
-            pass
-            #print("Error in accomplishments parse")
+            print("\t>>> No accomplishments found")
         
         return mainData
 
@@ -298,6 +330,18 @@ class BsParser():
         data = []
         for person in profilesList:
             name = person.find("span", {"class" : "name actor-name"}).text
+            title = person.find("p", {"class" : "subline-level-1 t-14 t-black t-normal search-result__truncate"})
+            if title != None:
+                title = title.text
+            else:
+                title = ""
+
+            loc = person.find("p", {"class" : "subline-level-2 t-12 t-black--light t-normal search-result__truncate"})
+            if loc != None:
+                loc = loc.text
+            else:
+                loc = ""
+
             profileUrl = "https://linkedin.com" + person.find("a", {"class" : "search-result__result-link ember-view"})["href"]
             degree = person.find("span", {"class" : "distance-badge separator ember-view"}).text.replace("\n","").strip()
             data.append((name, profileUrl, degree))

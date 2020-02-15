@@ -90,25 +90,35 @@ class BsHelper():
         '''
             Perform search on given url and return beautiful soup object
         '''
-        self.browser.get(link)
+        try:
+            self.browser.get(link)
+        except:
+            print("\t>>> Cannot get browser link")
         
-        SCROLL_PAUSE_TIME = 5
-        for i in range(1,5):
-            # Scroll down to bottom
-            self.browser.execute_script("window.scrollTo(0, {});".format(400 * i))
+        try:
+            SCROLL_PAUSE_TIME = 5
+            for i in range(1,5):
+                # Scroll down to bottom
+                self.browser.execute_script("window.scrollTo(0, {});".format(400 * i))
 
-            # Wait to load page
-            time.sleep(SCROLL_PAUSE_TIME)
-
-
-        src = self.browser.page_source
-        soup = BeautifulSoup(src, 'lxml')
+                # Wait to load page
+                time.sleep(SCROLL_PAUSE_TIME)
+        except:
+            print("\t>>> Cannot scroll")
+        try:
+            src = self.browser.page_source
+            soup = BeautifulSoup(src, 'lxml')
+        except:
+            print("\t>>> Cannot get source file")
         return soup
 
     def getProfilePage(self, link):
-        self.browser.get(link)
-        self.scrollAndLoadContent()
-        self.scrollAndClick()
-        src = self.browser.page_source
-        soup = BeautifulSoup(src, 'lxml')
-        return soup
+        try:
+            self.browser.get(link)
+            self.scrollAndLoadContent()
+            self.scrollAndClick()
+            src = self.browser.page_source
+            soup = BeautifulSoup(src, 'lxml')
+            return soup
+        except:
+            print("[INFO] - Error getting soup")
