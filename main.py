@@ -73,8 +73,8 @@ def processFile():
 
 
 # Search for profiles
-#searchAndSave(URL_TO_SEARCH, noOfPages)
+searchAndSave(URL_TO_SEARCH, noOfPages)
 
 # Process file
-#processFile()
-processUrl("https://www.linkedin.com/in/devendra-prasat2794/")
+processFile()
+#processUrl("https://www.linkedin.com/in/ckglobalsingh/")
