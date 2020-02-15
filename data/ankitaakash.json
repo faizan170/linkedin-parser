@@ -1,0 +1,113 @@
+{
+    "name": "Ankit Aakash",
+    "loc": "Bengaluru, Karnataka, India",
+    "profileTitle": "Looking for job opportunity in Data Science.",
+    "connections": "500+ connections",
+    "about": " \n      Machine Learning | Data Science enthusiast. Actively looking for job opportunity in Data Science.\n... see more",
+    "experience": [
+        {
+            "role": "Intern",
+            "company": "CSIR-CDRI"
+        },
+        {
+            "role": "Intern",
+            "company": "Azure Skynet Solutions Pvt. Ltd",
+            "location": "Bengaluru, Karnataka, India"
+        },
+        {
+            "role": "Student Ambassador",
+            "company": "Internshala",
+            "location": "Bengaluru Area, India"
+        },
+        {
+            "company": "ExpertsHub Industry Skill Development Centre",
+            "duration": "1 mo",
+            "roles": [
+                {
+                    "role": "Internship Trainee (IoT)",
+                    "dateRange": "Jul 2018",
+                    "duration": "1 mo",
+                    "location": "Bengaluru Area, India"
+                },
+                {
+                    "role": "Intern",
+                    "dateRange": "Jul 2018",
+                    "duration": "1 mo",
+                    "location": "Bengaluru, Karnataka, India"
+                }
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institute": "Acharya Institute Of Technology",
+            "title": "BE - Bachelor of Engineering",
+            "studyArea": "Information Technology",
+            "duration": {
+                "start": "2016",
+                "end": "2020"
+            }
+        },
+        {
+            "institute": "Sree Ayyappa Public School , Bokaro Steel city , Jharkhand",
+            "title": "Higher Secondary",
+            "studyArea": "Physics, Chemistry, Mathematics with Computer Science",
+            "duration": {
+                "start": "2013",
+                "end": "2015"
+            }
+        }
+    ],
+    "certifications": [
+        {
+            "title": "INTRODUCTION TO MACHINE LEARNING",
+            "issuingCompany": "Issued Oct 2018No Expiration Date\n"
+        }
+    ],
+    "skills": {
+        "mainSkills": [
+            "Python (Programming Language)",
+            "Internet of Things (IoT)",
+            "Machine Learning"
+        ],
+        "otherSkills": [
+            {
+                "tag": "Industry Knowledge",
+                "skills": [
+                    "Data Structures",
+                    "Data Analysis"
+                ]
+            },
+            {
+                "tag": "Tools & Technologies",
+                "skills": [
+                    "C (Programming Language)",
+                    "C++",
+                    "Microsoft Excel",
+                    "Microsoft Word"
+                ]
+            },
+            {
+                "tag": "Interpersonal Skills",
+                "skills": [
+                    "Management",
+                    "Public Speaking",
+                    "Problem Solving"
+                ]
+            },
+            {
+                "tag": "Other Skills",
+                "skills": [
+                    "Data Science"
+                ]
+            }
+        ]
+    },
+    "accomplishments": {
+        "courses": null,
+        "languages": null,
+        "projects": [
+            "HOME AUTOMATION USING GOOGLE CLOUD"
+        ]
+    }
+}

@@ -23,14 +23,17 @@ def searchAndSave(URL_TO_SEARCH, noOfPages):
     # Search profiles
     data = []
     for i in range(1,noOfPages + 1):
-        print("Processing Page:", i)
-        url = URL_TO_SEARCH
-        if i > 1:
-            url = url + "&page={}".format(i)
-        searchSoup = bsHelper.getProfileSearch(url)
-        results = bsParser.processSearchResults(searchSoup)
-        for v in results:
-            data.append(v)
+        try:
+            print("Processing Page:", i)
+            url = URL_TO_SEARCH
+            if i > 1:
+                url = url + "&page={}".format(i)
+            searchSoup = bsHelper.getProfileSearch(url)
+            results = bsParser.processSearchResults(searchSoup)
+            for v in results:
+                data.append(v)
+        except:
+            print("Error fetching data")
     
     df = pd.DataFrame(data, columns=["name", "url", "connection"])
     print("[INFO] - Current data shape", df.shape)

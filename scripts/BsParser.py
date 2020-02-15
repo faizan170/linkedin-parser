@@ -329,20 +329,24 @@ class BsParser():
         print("Profiles found:", len(profilesList))
         data = []
         for person in profilesList:
-            name = person.find("span", {"class" : "name actor-name"}).text
-            title = person.find("p", {"class" : "subline-level-1 t-14 t-black t-normal search-result__truncate"})
-            if title != None:
-                title = title.text
-            else:
-                title = ""
-
-            loc = person.find("p", {"class" : "subline-level-2 t-12 t-black--light t-normal search-result__truncate"})
-            if loc != None:
-                loc = loc.text
-            else:
-                loc = ""
-
-            profileUrl = "https://linkedin.com" + person.find("a", {"class" : "search-result__result-link ember-view"})["href"]
-            degree = person.find("span", {"class" : "distance-badge separator ember-view"}).text.replace("\n","").strip()
-            data.append((name, profileUrl, degree))
+            try:
+                name = person.find("span", {"class" : "name actor-name"})
+                if name != None:
+                    name = name.text
+                else:
+                    print("\t >>> Name not found")
+                    name = ""
+                profileUrl = person.find("a", {"class" : "search-result__result-link ember-view"})
+                if profileUrl == None:
+                    continue
+                else:
+                    profileUrl = "https://linkedin.com" + person.find("a", {"class" : "search-result__result-link ember-view"})["href"]
+                degree = person.find("span", {"class" : "distance-badge separator ember-view"})
+                if degree != None:
+                    degree = degree.text.replace("\n","").strip()
+                else:
+                    degree = ""
+                data.append((name, profileUrl, degree))
+            except:
+                print("\t>>> No account found for person")
         return data
