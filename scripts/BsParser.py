@@ -1,3 +1,5 @@
+import re
+
 class BsParser():
     def __init__(self):
         pass
@@ -81,8 +83,14 @@ class BsParser():
                         #data = singleRole.find("div", {"class" : "pv-entity__summary-info-v2 pv-entity__summary-info--background-section pv-entity__summary-info-margin-top mb2"})
 
                         try:
+                            details = singleRole.find("div", {"class" : "pv-entity__extra-details ember-view"})
+                            if details != None:
+                                roleDict["jobDetails"] = details.text.replace("see more", "").replace("…", "").strip()
                             roleDict["role"] = singleRole.find("h3", {"class" : "t-14 t-black t-bold"}).findAll("span")[1].text
-                            roleDict["dateRange"] = singleRole.find("h4", {"class" : "pv-entity__date-range t-14 t-black--light t-normal"}).findAll("span")[1].text
+                            dateRange = singleRole.find("h4", {"class" : "pv-entity__date-range t-14 t-black--light t-normal"}).findAll("span")[1].text
+                            if len(dateRange.split("\u2013")) == 2:
+                                dateRange = {"start" : dateRange.split("\u2013")[0].strip(), "end" : dateRange.split("\u2013")[1].strip()}
+                            roleDict["dateRange"] = dateRange
                             roleDict["duration"] = singleRole.find("h4", {"class" : "t-14 t-black--light t-normal"}).findAll("span")[1].text
                             if singleRole.find("h4", {"class" : "pv-entity__location t-14 t-black--light t-normal block"}) != None:
                                 roleDict["location"] = singleRole.find("h4", {"class" : "pv-entity__location t-14 t-black--light t-normal block"}).findAll("span")[1].text
@@ -111,9 +119,17 @@ class BsParser():
                 try:
                     dateRange = exp.find("h4", {"class" : "pv-entity__date-range t-14 t-black--light t-normal"})
                     if dateRange != None:
-                        singleExp["dateRange"] = dateRange[0].findAll("span")[1].text
+                        dateRange = dateRange[0].findAll("span")[1].text
+                        if len(dateRange.split("\u2013")) == 2:
+                            dateRange = {"start" : dateRange.split("\u2013")[0].strip(), "end" : dateRange.split("\u2013")[1].strip()}
+                        singleExp["dateRange"] = dateRange    
                 except:
                     pass
+
+
+                details = exp.find("div", {"class" : "pv-entity__extra-details ember-view"})
+                if details != None:
+                    singleExp["jobDetails"] = details.text.replace("see more", "").replace("…", "").strip()
 
                 # Duration of work
                 try:
@@ -166,7 +182,11 @@ class BsParser():
                 educationData.append(data)
         return educationData
 
+    # Process user certifications
     def getCertifications(self, certificationsSection):
+        '''
+            process user certifications
+        '''
         if certificationsSection != None:
             certificationsList = certificationsSection.findAll("ul")
             if len(certificationsList) > 0:
@@ -221,6 +241,17 @@ class BsParser():
         except:
             print("\t>>> No other skills found")
         return userSkillsDetails
+
+
+    def getUserRecommendations(self, recommendations):
+        recs = recommendations.findAll("artdeco-tab")
+        if len(recs) == 2:
+            recommendations = {"received" : re.findall(r'\d+', recs[0].text.replace("\n", "").strip())[0],
+                            "given" : re.findall(r'\d+', recs[1].text.replace("\n", "").strip())[0]}
+            return recommendations
+        else:
+            return None
+
 
     def getAccomplishments(self, soup):
         acData = {}
@@ -311,6 +342,18 @@ class BsParser():
                 mainData.update({"skills" : skills})
         except:
             print("\t>>> No skills found")
+
+
+        print("\t>>> Getting recommendations")
+        try:
+            recommendations = soup.find("artdeco-tabs", {"class" : "mt1 ember-view"})
+            if recommendations != None:
+                recs = self.getUserRecommendations(recommendations)
+                mainData.update({"recommendations" : recs})
+        except:
+            print("\t>>> No recommendations found")
+            
+
 
         print("\t>>>Working with accomplishments")
         # Accomplishments

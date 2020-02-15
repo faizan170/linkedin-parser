@@ -1,0 +1,118 @@
+{
+    "name": "Talha Nadeem",
+    "loc": "Pakistan",
+    "profileTitle": "Machine Learning Developer at Deeper Systems | Python | Flask | Deep learning | Data Science",
+    "connections": "245 connections",
+    "about": " Energetic graduate of software engineering with an experience of 1.5 years in the area of Python development and\nfocused expertise in predictive model development using machine learning and deep learning techniques to build and\n\n      modify algorithms to gain insights on data and yield predictions. Proficient in Python, Flask, Keras, Tenserflow\n... see more",
+    "experience": [
+        {
+            "role": "Machine Learning Developer",
+            "company": "Deeper Systems",
+            "jobDetails": "Remote Job. Building deep learning predictive models using Keras and other frameworks. Working on millions of entries of data. Worked on prediction of orientation of images and predicting certain attributes of a board game.",
+            "location": "United States"
+        },
+        {
+            "role": "Project Lead Developer",
+            "company": "Fivercore Pvt Ltd",
+            "jobDetails": "Development and maintenance of \"Aviation Safety Toolkit using Data Analytics\" as a commercial and final year project. The project included analysis on all in-air aircraft data from ADS-B API and a web framework to showcase the analysis and predict the probability of a risk occurring based on certain conditions",
+            "location": "Pakistan"
+        },
+        {
+            "role": "Freelance Software Developer",
+            "company": "Colleague",
+            "jobDetails": "Built a model as a freelance project for a colleague to predict the gender and emotion of a person or multiple person in an image or through real-time webcam using OpenCv, Caffe and Keras frameworks",
+            "location": "Pakistan"
+        },
+        {
+            "role": "Learning Experience (Python, ML, DL) ",
+            "company": "PIAIC",
+            "jobDetails": "1) Sentiment Analysis of Movie reviews. 2) Linear Modeling of Height vs Weight ( Manual and using Keras ). 3) Binary classification - Mines vs Rocks , Classifying movie reviews. 4) Multi-Class Classification - Identifying flower types, Classifying newswires. 5) Regression - Predicting House prices. 6) Modeling of Genetic Algorithm using Parent selection and crossover schemes",
+            "location": "Pakistan"
+        }
+    ],
+    "education": [
+        {
+            "institute": "NED University of Engineering and Technology",
+            "title": "Bachelor of Engineering - BE",
+            "studyArea": "Computer Software Engineering",
+            "marks": "A-",
+            "duration": {
+                "start": "2015",
+                "end": "2019"
+            }
+        }
+    ],
+    "skills": {
+        "mainSkills": [
+            "Machine Learning",
+            "Deep Learning",
+            "Python (Programming Language)"
+        ],
+        "otherSkills": [
+            {
+                "tag": "Industry Knowledge",
+                "skills": [
+                    "Artificial Intelligence (AI)",
+                    "Data Analysis",
+                    "Big Data",
+                    "Project Management"
+                ]
+            },
+            {
+                "tag": "Tools & Technologies",
+                "skills": [
+                    "Keras",
+                    "TensorFlow",
+                    "Flask",
+                    "Pandas (Software)",
+                    "Caffe",
+                    "Deep Neural Networks (DNN)",
+                    "Jupyter",
+                    "Docker Products",
+                    "Microsoft Visual Studio Code",
+                    "Visual Studio",
+                    "Git",
+                    "Bash",
+                    "Linux",
+                    "Ubuntu"
+                ]
+            },
+            {
+                "tag": "Other Skills",
+                "skills": [
+                    "Data Science",
+                    "Sentiment Analysis",
+                    "Predictive Modeling",
+                    "Predictive Analytics",
+                    "OpenCV",
+                    "Data Classification",
+                    "NumPy",
+                    "Panda",
+                    "Matplotlib",
+                    "Data Analytics",
+                    "Big Data Analytics",
+                    "ADS-B",
+                    "Pycharm",
+                    "Artificial Neural Networks",
+                    "Convolutional Neural Networks (CNN)",
+                    "Regression Analysis",
+                    "Regression Models",
+                    "Project Leadership"
+                ]
+            }
+        ]
+    },
+    "recommendations": {
+        "received": "0",
+        "given": "0"
+    },
+    "accomplishments": {
+        "courses": [
+            "Institute of Applied Artificial Intelligence"
+        ],
+        "languages": [
+            "English"
+        ],
+        "projects": null
+    }
+}

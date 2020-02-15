@@ -50,6 +50,7 @@ class BsHelper():
         clicks = [False, False]
         data = ["//button[@class='pv-profile-section__card-action-bar pv-skills-section__additional-skills artdeco-container-card-action-bar artdeco-button artdeco-button--tertiary artdeco-button--3 artdeco-button--fluid']",
                 "//button[@class='pv-profile-section__see-more-inline pv-profile-section__text-truncate-toggle link link-without-hover-state']",
+               #"//button[@class='pv-profile-section__see-more-inline pv-profile-section__text-truncate-toggle link link-without-hover-state']",
                #"//button[@aria-controls='languages-expandable-content']",
                #"//button[@aria-controls='projects-expandable-content']"
                ]

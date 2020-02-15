@@ -8,67 +8,69 @@
         {
             "role": "Founder and CEO",
             "company": "Data Science Dream Job",
-            "dateRange": "Mar 2018 \u2013 Present",
-            "duration": "2 yrs",
+            "jobDetails": "We help aspiring data scientists learn the skills, master the job search, and get their careers started in industry.Visit www.datasciencedreamjob.com to learn more and joining our free mailing list at www.datasciencedreamjob.com/free-tips",
             "location": "Greater Chicago Area"
         },
         {
-            "role": "\nCompany Name\nThe Marketing Store, North America\n",
-            "dateRange": "Feb 2018 \u2013 May 2018",
-            "duration": "4 mos"
-        },
-        {
-            "role": "\nTitle\nSr. Director of Data Science\n",
-            "dateRange": "Feb 2018 \u2013 May 2018",
-            "duration": "4 mos",
-            "location": "Greater Chicago Area"
-        },
-        {
-            "role": "\nTitle\nDirector of Data Science\n",
-            "dateRange": "May 2017 \u2013 Feb 2018",
-            "duration": "10 mos",
-            "location": "Greater Chicago Area"
+            "company": "The Marketing Store, North America",
+            "duration": "1 yr 1 mo",
+            "roles": [
+                {
+                    "jobDetails": "Responsible for the direction, development, and vision of the Data Science department.\u2022 Planning, developing, and executing predictive marketing strategies across a variety industry leading brands, including McDonald's and the Nissan-Renault global partnership.\u2022 Managing team of data scientists and engineers, helping to bring new ideas to life, optimize old ones, and maximize value for clients.\u2022 Interfacing with clients to drive value through collaboration and empathetic innovation.\u2022 Influencing and collaborating with multiple business stakeholders and agency offices to create and deliver predictive and prescriptive models, data-driven insights, and automated advanced-analytics products.Projects:\u2022 Designing and overseeing the implementation of the Customer Intelligence Center\u2122, the first truly modular, portable, scalable, extensible, machine-learning framework focused on one-to-one marketing that allows major corporations to seamlessly integrate their message with each individual's human journey, not just their customer journey.",
+                    "role": "Sr. Director of Data Science",
+                    "dateRange": {
+                        "start": "Feb 2018",
+                        "end": "May 2018"
+                    },
+                    "duration": "4 mos",
+                    "location": "Greater Chicago Area"
+                },
+                {
+                    "jobDetails": "Responsible for the direction, development, and vision of the Data Science department.\u2022 Planning, developing, and executing predictive marketing strategies across a variety industry leading brands, including McDonald's and the Nissan-Renault global partnership.\u2022 Managing team of data scientists and engineers, helping to bring new ideas to life, optimize old ones, and maximize value for clients.\u2022 Interfacing with clients to drive value through collaboration and empathetic innovation.\u2022 Influencing and collaborating with multiple business stakeholders and agency offices to create and deliver predictive and prescriptive models, data-driven insights, and automated advanced-analytics products.Projects:\u2022 Designing and overseeing the implementation of the Customer Intelligence Center\u2122, the first truly modular, portable, scalable, extensible, machine-learning framework focused on one-to-one marketing that allows major corporations to seamlessly integrate their message with each individual's human journey, not just their customer journey.",
+                    "role": "Director of Data Science",
+                    "dateRange": {
+                        "start": "May 2017",
+                        "end": "Feb 2018"
+                    },
+                    "duration": "10 mos",
+                    "location": "Greater Chicago Area"
+                }
+            ]
         },
         {
             "role": "Manager, Data Analytics",
             "company": "Constellation Brands",
-            "dateRange": "Jan 2017 \u2013 May 2017",
-            "duration": "5 mos",
+            "jobDetails": "Leveraged data science and advanced analytics to drive increased beer sales at the fastest growing major beer company in the US.\u2022 Identified sales trends and market opportunities for leadership teams on key initiatives.\u2022 Created and maintained data-driven methodologies for sales processes.\u2022 Provided ongoing support for departments on how to leverage data science solutions for business problems.\u2022 Implemented new processes and technologies to improve collaboration and efficiency for data science teams.\u2022 Created talent pipeline by introducing data science intern program.\u2022 Introduced data science and software engineering best practices to create foundation for rapidly-scalable, analytics-driven future.",
             "location": "Chicago, Illinois"
         },
         {
             "role": "Lead Data Scientist",
             "company": "Anheuser-Busch InBev",
-            "dateRange": "Oct 2015 \u2013 Jan 2017",
-            "duration": "1 yr 4 mos",
+            "jobDetails": "Acting as lead data scientist and software engineer, project manager, team manager, and spokesman for all Global Tech Sales initiatives at Bud Analytics Lab.\u2022 Led team of data scientists, researchers, and software engineers to develop products that measurably and efficiently improve worldwide sales at the word's largest beer company, resulting in over $400M of projected top-line growth.\u2022 Interfaced with clients to receive valuable product feedback.\u2022 Drove strategy and vision for products by translating research, customer insights, and data discovery into innovative business solutions.\u2022 Recruited top-performing interns, FTEs, and contractors.\u2022 Collaborated with Global IT, Architecture, Infrastructure, and Sales teams to deploy solutions.Projects\u2022 Data consolidation using NLP and machine learning (any language, any data sources)\u2022 Prediction of new customer value\u2022 Prediction of inventory using time series techniques and survival modeling\u2022 Recommender systems using collaborative filtering and matrix factorizations\u2022 Trade-marketing investment optimization using machine learning\u2022 Webscraping, sentiment analysis, and predictive modeling to drive hyper-local marketing",
             "location": "Champaign, Illinois"
         },
         {
             "role": "Software Engineer",
             "company": "Riverside Research",
-            "dateRange": "Apr 2014 \u2013 Oct 2015",
-            "duration": "1 yr 7 mos",
+            "jobDetails": "Software engineer for leading scientific computing and electromagnetics laboratory.\u2022 Led independent projects requiring careful attention to detail, planning, collaboration, tracking, and on-time results delivery.\u2022 Developed electromagnetics solvers, code auto-generators, and high-performance computing applications utilizing object-orient design, multi-processing, multi-threading, and software-engineering best practices in C++, Fortran, MPI, OpenMP, CUDA, and Python for DoD, DoE, and multiple major government contractors.",
             "location": "Champaign, Illinois"
         },
         {
             "role": "Researcher - Scientific Computing Group",
             "company": "University of Illinois at Urbana-Champaign",
-            "dateRange": "Jan 2013 \u2013 May 2014",
-            "duration": "1 yr 5 mos",
+            "jobDetails": "Developed, implemented, and tested new methods for solving the phase reconstruction problem in audio processing.  Additionally, investigated and designed new techniques for both general-purpose and power-efficient algebraic multigrid solvers.",
             "location": "Urbana, Illinois"
         },
         {
             "role": "Researcher - Parallel Algorithms for Data Analysis and Simulation Group",
             "company": "Institute for Computational Engineering and Sciences (ICES)",
-            "dateRange": "Jun 2012 \u2013 Dec 2012",
-            "duration": "7 mos",
+            "jobDetails": "Worked as part of the Parallel Algorithms for Data Analysis and Simulation Group to develop and implement new parallel, recursive singular value decomposition algorithm for large, dense, low-rank matrices as part of a machine learning algorithm used for medical image analysis on the Jaguar and Lonestar supercomputing clusters.",
             "location": "Austin, Texas"
         },
         {
             "role": "Researcher - Scientific Computing Group",
             "company": "University of Illinois at Urbana-Champaign",
-            "dateRange": "May 2011 \u2013 May 2012",
-            "duration": "1 yr 1 mo",
+            "jobDetails": "Developed and implemented a new parallel, scalable, and uniform random number generator using cryptographic hash functions to achieve improved speed and reliability suitable for large-scale parallel stochastic simulations.",
             "location": "Urbana, Illinois"
         }
     ],
@@ -150,5 +152,16 @@
                 ]
             }
         ]
+    },
+    "recommendations": {
+        "received": "4",
+        "given": "0"
+    },
+    "accomplishments": {
+        "courses": null,
+        "languages": [
+            "English"
+        ],
+        "projects": null
     }
 }
