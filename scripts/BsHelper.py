@@ -126,7 +126,7 @@ class BsHelper():
 
         FormSend = False
         if connectClick == True:
-            time.sleep(5)
+            time.sleep(3)
             try:
                 button = self.browser.find_element_by_xpath("//button[@class='mr1 artdeco-button artdeco-button--muted artdeco-button--3 artdeco-button--secondary ember-view']")
                 button.click()
@@ -137,10 +137,10 @@ class BsHelper():
                 button.click()
                 print("Going other way")
         if FormSend == True:
-            time.sleep(5)
+            time.sleep(3)
             try:
                 browser.execute_script("arguments[0].value = arguments[1]", browser.find_element_by_id("custom-message"), message)
-
+                time.sleep(3)
                 button = browser.find_element_by_xpath("//button[@class='ml1 artdeco-button artdeco-button--3 artdeco-button--primary ember-view']")
                 button.click()
                 print("Success")

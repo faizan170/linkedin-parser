@@ -2,7 +2,7 @@ from scripts.BsHelper import BsHelper
 from scripts.BsParser import BsParser
 from scripts.utils import Utils
 import pandas as pd
-import os
+import os, time
 
 email = input("Enter linkedin email: ")
 password = input("Enter linkedin password: ")
@@ -14,10 +14,10 @@ bsHelper = BsHelper("chromedriver.exe")
 bsHelper.loginLinkedin(email, password)
 bsParser = BsParser()
 utils = Utils()
-
+time.sleep(5)
 # Change according to your requirements. For 1 page you get 10 results.
 URL_TO_SEARCH = "https://www.linkedin.com/search/results/people/?keywords=data%20science%20job&origin=SWITCH_SEARCH_VERTICAL"
-noOfPages = 100
+noOfPages = 1
 DATA_DIR = "data"
 CSV_DIR = "csv"
 CSV_NAME = "accounts.csv"
@@ -76,7 +76,7 @@ def processFile():
 
 
 # Search for profiles
-#searchAndSave(URL_TO_SEARCH, noOfPages)
+searchAndSave(URL_TO_SEARCH, noOfPages)
 
 # Process file
 processFile()
