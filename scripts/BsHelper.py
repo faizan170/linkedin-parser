@@ -116,6 +116,7 @@ class BsHelper():
 
     def sendConnectionRequest(self, message):
         connectClick = False
+        time.sleep(1)
         try:
             button = self.browser.find_element_by_xpath("//button[@class='pv-s-profile-actions pv-s-profile-actions--connect ml2 artdeco-button artdeco-button--2 artdeco-button--primary ember-view']")
             button.click()
@@ -125,6 +126,7 @@ class BsHelper():
 
         FormSend = False
         if connectClick == True:
+            time.sleep(5)
             try:
                 button = self.browser.find_element_by_xpath("//button[@class='mr1 artdeco-button artdeco-button--muted artdeco-button--3 artdeco-button--secondary ember-view']")
                 button.click()
@@ -135,6 +137,7 @@ class BsHelper():
                 button.click()
                 print("Going other way")
         if FormSend == True:
+            time.sleep(5)
             try:
                 browser.execute_script("arguments[0].value = arguments[1]", browser.find_element_by_id("custom-message"), message)
 

@@ -1,0 +1,68 @@
+{
+    "name": "Salman Haider",
+    "loc": "Pakistan",
+    "profileTitle": "-- Looking for a data science internship/job",
+    "connections": "154 connections",
+    "about": " Want to join a dynamic association where my capacities will be improved and acknowledged with a definitive target of\n\n      the association's crucial.\n... see more",
+    "education": [
+        {
+            "institute": "Alhamd Islamic University Islamabad",
+            "title": "BS(CS)",
+            "studyArea": "Data science",
+            "duration": {
+                "start": "2014",
+                "end": "2018"
+            }
+        }
+    ],
+    "certifications": [
+        {
+            "title": "Data Visualization with Python",
+            "issuingCompany": "Cognitive Class"
+        },
+        {
+            "title": "Data Analysis with Python",
+            "issuingCompany": "Cognitive Class"
+        },
+        {
+            "title": "Python for Data Science",
+            "issuingCompany": "Cognitive Class"
+        }
+    ],
+    "skills": {
+        "mainSkills": [
+            {
+                "title": "Python (Programming Language)",
+                "endorsements": 0
+            },
+            {
+                "title": "Data Visualization",
+                "endorsements": 0
+            },
+            {
+                "title": "Data Science",
+                "endorsements": 0
+            }
+        ],
+        "otherSkills": [
+            {
+                "tag": "Industry Knowledge",
+                "skills": [
+                    "Machine Learning"
+                ]
+            }
+        ]
+    },
+    "recommendations": {
+        "received": "0",
+        "given": "0"
+    },
+    "accomplishments": {
+        "courses": null,
+        "languages": null,
+        "projects": [
+            "African banking crises",
+            "clustering techniques"
+        ]
+    }
+}

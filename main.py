@@ -76,7 +76,7 @@ def processFile():
 
 
 # Search for profiles
-searchAndSave(URL_TO_SEARCH, noOfPages)
+#searchAndSave(URL_TO_SEARCH, noOfPages)
 
 # Process file
 processFile()
