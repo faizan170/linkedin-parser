@@ -113,13 +113,57 @@ class BsHelper():
             print("\t>>> Cannot get source file")
         return soup
 
-    def getProfilePage(self, link):
+
+    def sendConnectionRequest(self, message):
+        connectClick = False
+        try:
+            button = self.browser.find_element_by_xpath("//button[@class='pv-s-profile-actions pv-s-profile-actions--connect ml2 artdeco-button artdeco-button--2 artdeco-button--primary ember-view']")
+            button.click()
+            connectClick = True
+        except:
+            pass
+
+        FormSend = False
+        if connectClick == True:
+            try:
+                button = self.browser.find_element_by_xpath("//button[@class='mr1 artdeco-button artdeco-button--muted artdeco-button--3 artdeco-button--secondary ember-view']")
+                button.click()
+                FormSend = True
+                print("Going into form")
+            except:
+                button = self.browser.find_element_by_xpath("//button[@class='ml1 artdeco-button artdeco-button--3 artdeco-button--primary ember-view']")
+                button.click()
+                print("Going other way")
+        if FormSend == True:
+            try:
+                browser.execute_script("arguments[0].value = arguments[1]", browser.find_element_by_id("custom-message"), message)
+
+                button = browser.find_element_by_xpath("//button[@class='ml1 artdeco-button artdeco-button--3 artdeco-button--primary ember-view']")
+                button.click()
+                print("Success")
+            except:
+                print("Already connect")
+
+    def getProfilePage(self, link, message):
         try:
             self.browser.get(link)
             self.scrollAndLoadContent()
             self.scrollAndClick()
             src = self.browser.page_source
             soup = BeautifulSoup(src, 'lxml')
+            try:
+                name_div = soup.find('div', {'class': 'flex-1 mr5'})
+                name_loc = name_div.find_all('ul')
+                name = name_loc[0].find('li').get_text().strip()
+                message = message.format(name)
+            except:
+                message = "Hi, I want to connect with you."
+
+            # Sending connection request
+            try:
+                self.sendConnectionRequest(message)
+            except:
+                pass
             return soup
         except:
             print("[INFO] - Error getting soup")

@@ -7,6 +7,8 @@ import os
 email = input("Enter linkedin email: ")
 password = input("Enter linkedin password: ")
 
+connectMessage = "Hi {}, I want to connect with you."
+
 # Login to browser
 bsHelper = BsHelper("chromedriver.exe")
 bsHelper.loginLinkedin(email, password)
@@ -15,7 +17,7 @@ utils = Utils()
 
 # Change according to your requirements. For 1 page you get 10 results.
 URL_TO_SEARCH = "https://www.linkedin.com/search/results/people/?keywords=data%20science%20job&origin=SWITCH_SEARCH_VERTICAL"
-noOfPages = 3
+noOfPages = 100
 DATA_DIR = "data"
 CSV_DIR = "csv"
 CSV_NAME = "accounts.csv"
@@ -53,8 +55,9 @@ def searchAndSave(URL_TO_SEARCH, noOfPages):
 
 
 def processUrl(url):
+    global connectMessage
     fileName = os.path.join(DATA_DIR, url.split("/")[-2] + ".json")
-    soup = bsHelper.getProfilePage(url)
+    soup = bsHelper.getProfilePage(url, connectMessage)
     profile = bsParser.parseProfile(soup)
 
     utils.saveJson(fileName, profile)
@@ -77,4 +80,3 @@ searchAndSave(URL_TO_SEARCH, noOfPages)
 
 # Process file
 processFile()
-#processUrl("https://www.linkedin.com/in/ckglobalsingh/")

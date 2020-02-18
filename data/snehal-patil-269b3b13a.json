@@ -1,0 +1,108 @@
+{
+    "name": "Snehal Patil",
+    "loc": "Pune, Maharashtra, India",
+    "profileTitle": "Looking for a job in Data Science",
+    "connections": "500+ connections",
+    "experience": [
+        {
+            "role": "Machine Learning Intern",
+            "company": "Algoritmo Lab",
+            "type": "Full-time",
+            "dateRange": {
+                "start": "Aug 2019",
+                "end": "Present"
+            },
+            "duration": "7 mos",
+            "location": "Pune Area, India"
+        },
+        {
+            "role": "Trainee",
+            "company": "Prasaditi Medical Equipments ",
+            "type": "Full-time",
+            "dateRange": {
+                "start": "Jul 2017",
+                "end": "Apr 2019"
+            },
+            "duration": "1 yr 10 mos",
+            "location": "Sangli"
+        }
+    ],
+    "education": [
+        {
+            "institute": "Padmabhooshan Vasantraodada Patil Institute of Technology, Budhgaon,Sangli",
+            "title": "Bachelor of Engineering",
+            "studyArea": "Electronics and Telecommunication",
+            "marks": "Distinction ",
+            "duration": {
+                "start": "2013",
+                "end": "2017"
+            }
+        },
+        {
+            "institute": "Pandit Nehru Vidyalaya, Kavalapur",
+            "studyArea": " HSC",
+            "marks": "Distinction ",
+            "duration": {
+                "start": "2012",
+                "end": "2013"
+            }
+        },
+        {
+            "institute": "Pandit Nehru Vidyalaya, Kavalapur",
+            "title": "SSC",
+            "marks": "Distinction ",
+            "duration": {
+                "start": "2010",
+                "end": "2011"
+            }
+        }
+    ],
+    "skills": {
+        "mainSkills": [
+            {
+                "title": "Python (Programming Language)",
+                "endorsements": "6"
+            },
+            {
+                "title": "Statistics",
+                "endorsements": "2"
+            },
+            {
+                "title": "R",
+                "endorsements": "2"
+            }
+        ],
+        "otherSkills": [
+            {
+                "tag": "Industry Knowledge",
+                "skills": [
+                    "Data Structures"
+                ]
+            },
+            {
+                "tag": "Tools & Technologies",
+                "skills": [
+                    "C (Programming Language)",
+                    "SQL",
+                    "C++",
+                    "Java",
+                    "Hadoop"
+                ]
+            }
+        ]
+    },
+    "recommendations": {
+        "received": "0",
+        "given": "0"
+    },
+    "accomplishments": {
+        "courses": [
+            "Python and Hadoop"
+        ],
+        "languages": null,
+        "projects": [
+            " Quiz from the attached json file",
+            "GUI of Hospital Management System in Python using Tkinter"
+        ]
+    }
+}
