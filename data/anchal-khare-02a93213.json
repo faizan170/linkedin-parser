@@ -1,0 +1,155 @@
+{
+    "name": "Anchal Khare",
+    "loc": "Mumbai, Maharashtra, India",
+    "profileTitle": "Data Scientist at ZS | Applied Machine Learning and Deep Learning Professional",
+    "connections": "500+ connections",
+    "about": " Anchal has 6+ years of experience in Data Science, Machine Learning, Strategy,Consulting in the area of retail, CPG and BFSI enriched with in depth quantitative knowledge & business acumen. Anchal has also completed CFA level 1. Worked on various business problems and delivered value using descriptive and predictive analytics and optimization in the areas of marketing, supply chain, sales & distribution, fraud, claims etc. using various BI and Analytics tools and technologies like R, Python, Spotfire ,Tableau and BIG data platform(SPARK, Hive).Anchal also actively participates in advanced analytics and machine learning based business problems in Kaggle and Analytics Vidhya and contribute actively by producing high quality(above benchmark) solutions. Anchal is exploring optimization techniques and deep learning techniques to solve real world business problems.Specialties: Domains:\u2022 Acquisition, Propensity, CLTV, Uplift, Churn Model in the area of CRM and Marketing \u2022 Demand Forecasting, Inventory Analysis, Price Elasticity Model, Market Mix Model and Logistics Optimization in the area of Retail and Supply Chain.Techniques:\u2022 Classification problems dealing with Highly Imbalanced Classification data sets\u2022 Regularized Regression Techniques and Missing Value handling Techniques\u2022 Model Tuning, Cross-Validation, Boosting, Ensembling and Stacking\u2022 Deep learning LSTM models, RNNs and Convolutional NN \n... see more",
+    "experience": [
+        {
+            "role": "Data Scientist",
+            "company": "ZS",
+            "dateRange": {
+                "start": "Jun 2018",
+                "end": "Present"
+            },
+            "duration": "1 yr 9 mos",
+            "location": "Pune Area, India"
+        },
+        {
+            "role": "Senior Lead - Data Science",
+            "company": "Infosys",
+            "dateRange": {
+                "start": "Jun 2017",
+                "end": "May 2018"
+            },
+            "duration": "1 yr",
+            "location": "Pune Area, India"
+        },
+        {
+            "company": "Fractal Analytics",
+            "duration": "3 yrs 7 mos",
+            "roles": [
+                {
+                    "role": "Senior Consultant",
+                    "dateRange": {
+                        "start": "Apr 2015",
+                        "end": "Jun 2017"
+                    },
+                    "duration": "2 yrs 3 mos",
+                    "location": "Mumbai Area, India"
+                },
+                {
+                    "role": "Analyst",
+                    "dateRange": {
+                        "start": "Dec 2013",
+                        "end": "Mar 2015"
+                    },
+                    "duration": "1 yr 4 mos",
+                    "location": "Mumbai"
+                }
+            ]
+        },
+        {
+            "role": "Data Analyst",
+            "company": "Sushil Finance",
+            "dateRange": {
+                "start": "Apr 2013",
+                "end": "Nov 2013"
+            },
+            "duration": "8 mos",
+            "location": "Mumbai"
+        },
+        {
+            "role": "Assitant Systems Engineer - Data Analyst",
+            "company": "Tata Consultancy Services",
+            "dateRange": {
+                "start": "Jan 2010",
+                "end": "Jun 2011"
+            },
+            "duration": "1 yr 6 mos",
+            "location": "Mumbai Area, India"
+        }
+    ],
+    "education": [
+        {
+            "institute": "K.J. Somaiya Institute Of Management Studies and Research",
+            "title": "Master of Business Administration (M.B.A.)",
+            "studyArea": "Finance",
+            "duration": {
+                "start": "2011",
+                "end": "2013"
+            }
+        },
+        {
+            "institute": "JEC JABALPUR",
+            "title": "Engineer's Degree",
+            "studyArea": "Electronics and Communication Engineering",
+            "duration": {
+                "start": "2005",
+                "end": "2009"
+            }
+        }
+    ],
+    "skills": {
+        "mainSkills": [
+            {
+                "title": "Business Analysis",
+                "endorsements": "7"
+            },
+            {
+                "title": "PL/SQL",
+                "endorsements": "5"
+            },
+            {
+                "title": "SQL",
+                "endorsements": "5"
+            }
+        ],
+        "otherSkills": [
+            {
+                "tag": "Industry Knowledge",
+                "skills": [
+                    "Analysis",
+                    "Analytical Skills",
+                    "Business Analytics",
+                    "Analytics",
+                    "Data Analysis"
+                ]
+            },
+            {
+                "tag": "Tools & Technologies",
+                "skills": [
+                    "Microsoft Excel",
+                    "R",
+                    "Python",
+                    "Microsoft Office"
+                ]
+            },
+            {
+                "tag": "Interpersonal Skills",
+                "skills": [
+                    "Team Management"
+                ]
+            },
+            {
+                "tag": "Other Skills",
+                "skills": [
+                    "Data Analytics",
+                    "Marketing Mix Modeling",
+                    "Spotfire",
+                    "Alteryx",
+                    "Knime"
+                ]
+            }
+        ]
+    },
+    "recommendations": {
+        "received": "0",
+        "given": "1"
+    },
+    "accomplishments": {
+        "courses": null,
+        "languages": null,
+        "projects": null
+    }
+}

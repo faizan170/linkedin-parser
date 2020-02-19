@@ -1,0 +1,165 @@
+{
+    "name": "Vikram Singh",
+    "loc": "Bengaluru, Karnataka, India",
+    "profileTitle": "Data Scientist",
+    "connections": "500+ connections",
+    "about": " I am currently working on few non-deterministic problems in print and packaging industry using Machine Learning (Traditional ML and Deep Learning). These problems include job cost estimation, image recognition, anomaly detection and predictive maintenance.  I like to explore machine learning and actively participate in data science competitions. I also develop mobile applications as a hobby. I have published few applications for Android with 10K+ active users.I also have over 5 years of experience in design/implementation of software modules using C++.Skills: Python, R, Deep learning, Tensorflow, Data visualization, C++, Android, Flutter, Design patterns, Java, AlgorithmsApps: https://play.google.com/store/apps/dev?id=6447526686415699485Github: https://github.com/vikram731\n... see more",
+    "experience": [
+        {
+            "company": "EFI",
+            "duration": "8 yrs 8 mos",
+            "roles": [
+                {
+                    "role": "Data Scientist",
+                    "dateRange": {
+                        "start": "Jul 2016",
+                        "end": "Present"
+                    },
+                    "duration": "3 yrs 8 mos",
+                    "location": "Bengaluru Area, India"
+                },
+                {
+                    "role": "Senior Software Engineer",
+                    "dateRange": {
+                        "start": "Jul 2011",
+                        "end": "Jul 2016"
+                    },
+                    "duration": "5 yrs 1 mo",
+                    "location": "Bengaluru Area, India"
+                }
+            ]
+        },
+        {
+            "role": "Intern",
+            "company": "Hewlett-Packard",
+            "dateRange": {
+                "start": "Jan 2011",
+                "end": "Jul 2011"
+            },
+            "duration": "7 mos",
+            "location": "Bengaluru Area, India"
+        },
+        {
+            "role": "Intern",
+            "company": "Moser Baer India Ltd",
+            "dateRange": {
+                "start": "Jun 2010",
+                "end": "Jul 2010"
+            },
+            "duration": "2 mos"
+        }
+    ],
+    "education": [
+        {
+            "institute": "Manipal Institute of Technology",
+            "title": "B.E.",
+            "studyArea": "Computer Science",
+            "marks": "8.5",
+            "duration": {
+                "start": "2007",
+                "end": "2011"
+            }
+        },
+        {
+            "institute": "Maharishi Vidya Mandir",
+            "title": "High School",
+            "marks": "90.4%",
+            "duration": {
+                "start": "2003",
+                "end": "2004"
+            }
+        }
+    ],
+    "certifications": [
+        {
+            "title": "Server-side Development with NodeJS",
+            "issuingCompany": "Coursera"
+        },
+        {
+            "title": "Deep Learning",
+            "issuingCompany": "Udacity"
+        },
+        {
+            "title": "Machine Learning",
+            "issuingCompany": "Coursera"
+        },
+        {
+            "title": "Getting and Cleaning Data",
+            "issuingCompany": "Coursera"
+        },
+        {
+            "title": "R Programming",
+            "issuingCompany": "Coursera"
+        },
+        {
+            "title": "The Data Scientist\u2019s Toolbox",
+            "issuingCompany": "Coursera"
+        }
+    ],
+    "skills": {
+        "mainSkills": [
+            {
+                "title": "Machine Learning",
+                "endorsements": "6"
+            },
+            {
+                "title": "Deep Learning",
+                "endorsements": "1"
+            },
+            {
+                "title": "Python",
+                "endorsements": 0
+            }
+        ],
+        "otherSkills": [
+            {
+                "tag": "Industry Knowledge",
+                "skills": [
+                    "Software Development",
+                    "Software Engineering",
+                    "Object Oriented Design",
+                    "Data Structures",
+                    "Algorithms",
+                    "Shell Scripting"
+                ]
+            },
+            {
+                "tag": "Tools & Technologies",
+                "skills": [
+                    "C++",
+                    "Java",
+                    "R",
+                    "Android",
+                    "C",
+                    "Perl",
+                    "Objective-C",
+                    "Eclipse",
+                    "JavaScript",
+                    "Firebase",
+                    "Node.js"
+                ]
+            },
+            {
+                "tag": "Other Skills",
+                "skills": [
+                    "Elixir",
+                    "Data Science"
+                ]
+            }
+        ]
+    },
+    "recommendations": {
+        "received": "1",
+        "given": "1"
+    },
+    "accomplishments": {
+        "courses": null,
+        "languages": [
+            "English",
+            "Hindi"
+        ],
+        "projects": [
+            "Android applications"
+        ]
+    }
+}

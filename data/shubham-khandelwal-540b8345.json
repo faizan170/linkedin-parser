@@ -1,0 +1,176 @@
+{
+    "name": "Shubham Khandelwal",
+    "loc": "Hyderabad, Telangana, India",
+    "profileTitle": "Senior Data Scientist at Leoforce",
+    "connections": "500+ connections",
+    "about": " Seeking for a challenging problem and to be associated with an organization which will help me to give an opportunity\nto do active research projects and exercise my interpersonal skills and enhance my knowledge and explore futures\n\n      possibilities regarding the same.\n... see more",
+    "experience": [
+        {
+            "company": "Leoforce",
+            "duration": "3 yrs 7 mos",
+            "roles": [
+                {
+                    "role": "Senior Data Scientist",
+                    "dateRange": {
+                        "start": "Apr 2019",
+                        "end": "Present"
+                    },
+                    "duration": "11 mos",
+                    "location": "Hyderabad Area, India"
+                },
+                {
+                    "role": "Data Scientist",
+                    "dateRange": {
+                        "start": "Aug 2016",
+                        "end": "Mar 2019"
+                    },
+                    "duration": "2 yrs 8 mos",
+                    "location": "Hyderabad Area, India"
+                }
+            ]
+        },
+        {
+            "role": "Research Intern",
+            "company": "LIG - Laboratoire d'Informatique de Grenoble",
+            "dateRange": {
+                "start": "Feb 2016",
+                "end": "Jun 2016"
+            },
+            "duration": "5 mos",
+            "location": "Grenoble Area, France"
+        },
+        {
+            "role": "Software Engineering Intern",
+            "company": "LinkedIn",
+            "dateRange": {
+                "start": "Jul 2015",
+                "end": "Sep 2015"
+            },
+            "duration": "3 mos"
+        },
+        {
+            "role": "Research Intern",
+            "company": "Inria",
+            "dateRange": {
+                "start": "Feb 2015",
+                "end": "Jun 2015"
+            },
+            "duration": "5 mos"
+        },
+        {
+            "role": "Research Student",
+            "company": "IIIT Hyderabad",
+            "dateRange": {
+                "start": "May 2013",
+                "end": "Jul 2013"
+            },
+            "duration": "3 mos"
+        }
+    ],
+    "education": [
+        {
+            "institute": "Universit\u00e9 Joseph Fourier (Grenoble I)",
+            "title": "Master of Science (MS)",
+            "studyArea": "Computer Science",
+            "duration": {
+                "start": "2014",
+                "end": "2016"
+            }
+        },
+        {
+            "institute": "LNMIIT, Jaipur",
+            "title": "Bachelor's degree",
+            "studyArea": "Electrical, Electronics and Communications Engineering",
+            "duration": {
+                "start": "2010",
+                "end": "2014"
+            }
+        }
+    ],
+    "certifications": [
+        {
+            "title": "Certificate of Participation in the 2nd contest on the counter measures to 2D facial spoofing attacks",
+            "issuingCompany": "6th IAPR International Conference on Biometrics (ICB-2013), Spain"
+        },
+        {
+            "title": "Certificate of Participation in the contest on Kitchen Scene Context Based Gesture Recognition (KSCGR)",
+            "issuingCompany": "International Conference on Pattern Recognition - 2012"
+        }
+    ],
+    "skills": {
+        "mainSkills": [
+            {
+                "title": "C",
+                "endorsements": "26"
+            },
+            {
+                "title": "C++",
+                "endorsements": "25"
+            },
+            {
+                "title": "Matlab",
+                "endorsements": "19"
+            }
+        ],
+        "otherSkills": [
+            {
+                "tag": "Industry Knowledge",
+                "skills": [
+                    "Programming",
+                    "Data Structures",
+                    "Machine Learning",
+                    "Algorithms",
+                    "Computer Vision",
+                    "Statistics",
+                    "Data Mining"
+                ]
+            },
+            {
+                "tag": "Tools & Technologies",
+                "skills": [
+                    "Java",
+                    "HTML",
+                    "JavaScript",
+                    "LaTeX",
+                    "Microsoft Office",
+                    "Linux",
+                    "PHP",
+                    "MySQL",
+                    "Python",
+                    "R"
+                ]
+            },
+            {
+                "tag": "Other Skills",
+                "skills": [
+                    "Natural Language Processing",
+                    "Xilinx",
+                    "Deep Learning",
+                    "Apache Spark"
+                ]
+            }
+        ]
+    },
+    "recommendations": {
+        "received": "0",
+        "given": "0"
+    },
+    "accomplishments": {
+        "courses": [
+            "CS224d: Deep Learning for Natural Language Processing",
+            "CS231n: Convolutional Neural Networks for Visual Recognition",
+            "Microsoft's DAT209x: Programming in R for Data Science"
+        ],
+        "languages": [
+            "English",
+            "French"
+        ],
+        "projects": [
+            "Facial emotion recognition",
+            "Real Time Road Markings Detection for Driving Assistance",
+            "Counter measures to 2D facial spoofing attacks",
+            "fog enhancement using image processing",
+            "Kitchen scene gesture recognition system"
+        ]
+    }
+}

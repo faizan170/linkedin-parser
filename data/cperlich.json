@@ -1,0 +1,228 @@
+{
+    "name": "Claudia Perlich",
+    "loc": "Greater New York City Area",
+    "profileTitle": "Senior Data Scientist",
+    "connections": "500+ connections",
+    "about": " I started my career in Data Science at the IBM T.J. Watson Research Center, concentrating on research in data analytics and machine learning for complex real-world domains and applications. I tend to be domain agnostic having worked on almost anything from Twitter, DNA, server logs, CRM data, web usage, breast cancer, movie rating and many more. I am still actively publishing and have so far over 50 scientific publications to my name as well as a few patents in the area of machine learning. My claim to fame was winning data mining competitions, as well as several awards from industry and academia. I received my Ph.D. in Information Systems from Stern School of Business, New York University in 2005 and hold a Master of Computer Science from Colorado University. Besides my day job I like teaching and am available for panels, presentations, meetups, and debates around big (and small) data.Short disclaimer (I am sorry - I do not wish to offend): If you want to connect, please write a specific note as to why we should connect or where we met in person. Please do NOT reach out with sales requests - if you choose to ignore this suggestion I reserve the right to disconnect and possibly add your email to my collection of unwanted solicitation.Thank you!Specialties: - Data Analytics- Predictive Modeling- Machine Learning- Display Advertising- Public Speaking on Technical TopicsCompletely irrelevant fun facts:- used to compete in vaulting- have a 17-hand retired race horse called Monkey who is a grandson of Secretariat- still hold some powerlifting records at NYU- have been trying to learn the Busoni version of the Chaconne for the last 5 years\n... see more",
+    "experience": [
+        {
+            "role": "Senior Data Scientist",
+            "company": "Two Sigma",
+            "dateRange": {
+                "start": "Jan 2018",
+                "end": "Present"
+            },
+            "duration": "2 yrs 2 mos",
+            "location": "Greater New York City Area"
+        },
+        {
+            "role": "Chief Scientist",
+            "company": "Dstillery",
+            "dateRange": {
+                "start": "2010",
+                "end": "Present"
+            },
+            "duration": "10 yrs",
+            "location": "New York"
+        },
+        {
+            "role": "Adjunct Professor",
+            "company": "NYU Stern School of Business",
+            "dateRange": {
+                "start": "2010",
+                "end": "Present"
+            },
+            "duration": "10 yrs",
+            "location": "New York"
+        },
+        {
+            "role": "Advisor",
+            "company": "Data & Society Research Institute",
+            "dateRange": {
+                "start": "2016",
+                "end": "Present"
+            },
+            "duration": "4 yrs",
+            "location": "New York"
+        },
+        {
+            "role": "Steering Committee Member",
+            "company": "AI for Good Foundation",
+            "dateRange": {
+                "start": "2016",
+                "end": "Present"
+            },
+            "duration": "4 yrs",
+            "location": "New York"
+        },
+        {
+            "role": "Board Member",
+            "company": "Big Data by Mary Ann Liebert, Inc.",
+            "dateRange": {
+                "start": "2013",
+                "end": "Present"
+            },
+            "duration": "7 yrs",
+            "location": "NYC"
+        },
+        {
+            "role": "Data Science Hackathon Board Member",
+            "company": "I-COM Global",
+            "dateRange": {
+                "start": "Sep 2014",
+                "end": "Present"
+            },
+            "duration": "5 yrs 6 mos"
+        },
+        {
+            "role": "KDD 2014 General Chair",
+            "company": "ACM, Association for Computing Machinery",
+            "dateRange": {
+                "start": "Aug 2013",
+                "end": "Aug 2014"
+            },
+            "duration": "1 yr 1 mo",
+            "location": "New York City"
+        },
+        {
+            "role": "Research Staff Member",
+            "company": "IBM Research",
+            "dateRange": {
+                "start": "Oct 2004",
+                "end": "Jan 2010"
+            },
+            "duration": "5 yrs 4 mos"
+        },
+        {
+            "role": "PhD Student",
+            "company": "New York University",
+            "dateRange": {
+                "start": "1998",
+                "end": "2004"
+            },
+            "duration": "6 yrs"
+        }
+    ],
+    "education": [
+        {
+            "institute": "New York University",
+            "title": "Master of Science (M.S.)",
+            "studyArea": "Management Information Systems",
+            "duration": {
+                "start": "1998",
+                "end": "2000"
+            }
+        },
+        {
+            "institute": "New York University - Leonard N. Stern School of Business",
+            "title": "Doctor of Philosophy (Ph.D.)",
+            "studyArea": "Information Systems",
+            "duration": {
+                "start": "1998",
+                "end": "2004"
+            }
+        },
+        {
+            "institute": "Technische Universit\u00e4t Darmstadt / Technical University Darmstadt",
+            "title": "Diplom (Master equivalent)",
+            "studyArea": "Computer Science",
+            "duration": {
+                "start": "1992",
+                "end": "1998"
+            }
+        }
+    ],
+    "skills": {
+        "mainSkills": [
+            {
+                "title": "Data Mining",
+                "endorsements": "99+"
+            },
+            {
+                "title": "Machine Learning",
+                "endorsements": "99+"
+            },
+            {
+                "title": "Predictive Modeling",
+                "endorsements": "99+"
+            }
+        ],
+        "otherSkills": [
+            {
+                "tag": "Industry Knowledge",
+                "skills": [
+                    "Algorithms",
+                    "Data Analysis",
+                    "Big Data",
+                    "Analytics",
+                    "Statistics",
+                    "Statistical Modeling",
+                    "Business Intelligence",
+                    "Computer Science",
+                    "Data Visualization",
+                    "Artificial Intelligence",
+                    "Distributed Systems",
+                    "Optimization",
+                    "Entrepreneurship",
+                    "Mathematical Modeling",
+                    "Computer Vision"
+                ]
+            },
+            {
+                "tag": "Tools & Technologies",
+                "skills": [
+                    "Hadoop",
+                    "Python",
+                    "R",
+                    "SQL",
+                    "C++",
+                    "MapReduce",
+                    "Matlab",
+                    "LaTeX",
+                    "Perl"
+                ]
+            },
+            {
+                "tag": "Interpersonal Skills",
+                "skills": [
+                    "Public Speaking",
+                    "Organizational Leadership",
+                    "Critical Thinking"
+                ]
+            },
+            {
+                "tag": "Other Skills",
+                "skills": [
+                    "Predictive Analytics",
+                    "Data Science",
+                    "Text Mining",
+                    "Information Retrieval",
+                    "Pattern Recognition",
+                    "Text Analytics",
+                    "Time Series Analysis",
+                    "Natural Language Processing",
+                    "Recommender Systems",
+                    "Information Extraction",
+                    "Neural Networks",
+                    "High Performance Computing",
+                    "Weka",
+                    "Semantic Web",
+                    "Analytic Problem Solving"
+                ]
+            }
+        ]
+    },
+    "recommendations": {
+        "received": "2",
+        "given": "5"
+    },
+    "accomplishments": {
+        "courses": null,
+        "languages": [
+            "English",
+            "German",
+            "Russian"
+        ],
+        "projects": null
+    }
+}

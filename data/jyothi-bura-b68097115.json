@@ -1,0 +1,144 @@
+{
+    "name": "Jyothi Bura",
+    "loc": "Hyderabad, Telangana, India",
+    "profileTitle": "Data Scientist , Actively looking for job change",
+    "connections": "500+ connections",
+    "about": " I am passionate about new data science methods, models and technology, I am driven intrested in solving unique and interesting problems. I've worked on cecl, wealth management.key skills: \u2022model building  \u2022statistical analysis  \u2022marketing analytics \u2022predictive modeling \u2022segmentation \u2022machine learning \u2022data analysis  \u2022forecasting  \u2022association rules  \u2022leadership\n... see more",
+    "experience": [
+        {
+            "company": "Cognerium Robotic Labs",
+            "duration": "1 yr 6 mos",
+            "roles": [
+                {
+                    "role": "Data Scientist",
+                    "dateRange": {
+                        "start": "Sep 2018",
+                        "end": "Present"
+                    },
+                    "duration": "1 yr 6 mos",
+                    "location": "Hyderabad Area, India"
+                },
+                {
+                    "role": "Data Scientist",
+                    "dateRange": {
+                        "start": "Sep 2018",
+                        "end": "Present"
+                    },
+                    "duration": "1 yr 6 mos",
+                    "location": "Hyderabad Area, India"
+                }
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institute": "Social prachar",
+            "title": "Data science",
+            "studyArea": "It",
+            "duration": {
+                "start": "2018",
+                "end": "2018"
+            }
+        },
+        {
+            "institute": "Vaagdevi Engineering College",
+            "title": "IEEE",
+            "studyArea": "IEEE world wide organisation",
+            "duration": {
+                "start": "2017",
+                "end": "2018"
+            }
+        },
+        {
+            "institute": "vaagdevi engineering college",
+            "title": "Engineer's degree",
+            "studyArea": "Electrical and Electronics Engineering",
+            "duration": {
+                "start": "2014",
+                "end": "2018"
+            }
+        },
+        {
+            "institute": "Nalanda college , adilabad",
+            "title": "Inter",
+            "studyArea": "MPC",
+            "duration": {
+                "start": "2013",
+                "end": "2014"
+            }
+        },
+        {
+            "institute": "Sr junior college, Warangal",
+            "title": "Inter",
+            "studyArea": "MPC",
+            "duration": {
+                "start": "2012",
+                "end": "2013"
+            }
+        },
+        {
+            "institute": "St Joseph's convent school , adilabad",
+            "title": "10",
+            "studyArea": "Schooling",
+            "duration": {
+                "start": "2009",
+                "end": "2012"
+            }
+        }
+    ],
+    "skills": {
+        "mainSkills": [
+            {
+                "title": "Data Science",
+                "endorsements": "6"
+            },
+            {
+                "title": "Machine Learning",
+                "endorsements": "3"
+            },
+            {
+                "title": "python",
+                "endorsements": "4"
+            }
+        ],
+        "otherSkills": [
+            {
+                "tag": "Tools & Technologies",
+                "skills": [
+                    "R",
+                    "SQL",
+                    "Jupyter",
+                    "Flask",
+                    "Bootstrap",
+                    "HTML",
+                    "Basic c",
+                    "REST API"
+                ]
+            },
+            {
+                "tag": "Interpersonal Skills",
+                "skills": [
+                    "Team Management"
+                ]
+            },
+            {
+                "tag": "Other Skills",
+                "skills": [
+                    "Hive",
+                    "sublime"
+                ]
+            }
+        ]
+    },
+    "recommendations": {
+        "received": "0",
+        "given": "0"
+    },
+    "accomplishments": {
+        "courses": [
+            "Data science"
+        ],
+        "languages": null,
+        "projects": null
+    }
+}

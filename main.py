@@ -16,8 +16,8 @@ bsParser = BsParser()
 utils = Utils()
 time.sleep(5)
 # Change according to your requirements. For 1 page you get 10 results.
-URL_TO_SEARCH = "https://www.linkedin.com/search/results/people/?keywords=data%20science%20job&origin=SWITCH_SEARCH_VERTICAL"
-noOfPages = 1
+URL_TO_SEARCH = "https://www.linkedin.com/search/results/people/?keywords=senior%20data%20scientist%20job%20actively&origin=SWITCH_SEARCH_VERTICAL"
+noOfPages = 3
 DATA_DIR = "data"
 CSV_DIR = "csv"
 CSV_NAME = "accounts.csv"

@@ -1,4 +1,4 @@
-requests
-bs4
-selenium
-pandas
+requests=='2.22.0'
+bs4=='4.8.2'
+selenium=='3.141.0'
+pandas=='0.25.3'
